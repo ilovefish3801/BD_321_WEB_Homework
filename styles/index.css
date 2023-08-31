@@ -17,14 +17,14 @@ body {
     background-color: #c66377;
     margin-bottom: 5px;
     color: rgb(255, 255, 255);
-    padding-bottom: 8px;
+    padding-bottom: 12px;
     margin-left: 10px;
 }
 
 .fruit-list span{
     padding-left: 10px;
     background-color: #9c344b;
-    padding-bottom: 8px;
+    padding-bottom: 12px;
     padding-right: 10px;
 }
 
@@ -35,7 +35,10 @@ body {
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style: none;
+
 }
+
+
 
 
 h1{
@@ -46,17 +49,45 @@ h1{
     padding-bottom: 16px;
 }
 
+.to-do-list li::after{
+    content: " ✖";
+}
+
+
+.to-do-list span{
+    text-decoration-line: line-through;
+}
+
 .d-list{
     background-color: #e2e2e2;
+}
+
+.d-list::before{
+    content: "☑ ";
 }
 
 .nd-list{
     background-color: #a5ccdb;
 }
 
+.nd-list::before{
+    content: "☐ ";
+}
+
 .nd-list-dif{
     background-color: #add9e6;
+}
+
+.nd-list-dif::before{
+    content: "☐ ";
 } */
+
+
+
+
+
+
+
 
 
 /* Task3 */
