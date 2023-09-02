@@ -69,7 +69,7 @@ h1{
 
 /* Task3 */
 
-/* h3{
+ /* h3{
     margin: 0;
     color: #fff;
 }
@@ -91,7 +91,17 @@ menu{
     background-color: #6e1237;
 }
 
-aside{
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+
+    grid-auto-rows: minmax(100px, auto);
+}
+
+ aside{
     background-color: #b65c81;
 }
 
@@ -107,17 +117,146 @@ aside{
 
 .asideThree{
     max-width: 100px;
+    justify-self: right;
+    height: 300px;
+    width: 200px;
 }
 
 main{
     background-color: #b65c81;
+    max-width: 600px;
+    width: 600px;
+    height: 400px;
 
+    display: grid;
+    justify-content: center;
+
+}   
+
+
+section{
+    background-color: #db92ae;
     max-width: 400px;
+
+    width: 400px;
+    height: 100px;
+
+    
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 15% 15% 30%;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+footer{
+    display: flex;
+    align-items: center;
+
+
+    background-color: #6e1237;
+
+    position: absolute;
+    bottom: 0;
+    
+    margin: 0;
+    width: 100%;
+    height: 40px;
 } */
+
+
+
+
+
+/* Task4 */
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #2a4f6f;
+    color: #fff;
+    height: 200px;
+    max-width: 900px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ulTwo{
+    margin-left: 200px;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section div{
+    margin-left: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.facebook{
+    transition: 1s;
+    filter: grayscale(100%);
+    margin-left: 40px;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url(../img/fb.png);
+    background-size: cover;
+}
+
+.facebook:hover{
+    cursor: pointer;
+    transition: 1s;
+    filter: grayscale(0%);
+}
+
+.instagram{
+    transition: 1s;
+    filter: grayscale(100%);
+    margin-left: 40px;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url(../img/insta.png);
+    background-size: cover;
+}
+
+.instagram:hover{
+    cursor: pointer;
+    transition: 1s;
+    filter: grayscale(0%);
+}
+
+
+.youtube{
+    transition: 1s;
+    filter: grayscale(100%);
+    margin-left: 40px;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url(../img/youtube.png);
+    background-size: cover;
+}
+
+.youtube:hover{
+    cursor: pointer;
+    transition: 1s;
+    filter: grayscale(0%);
+}
+
+.watermark{
+    text-align: center;
+}
