@@ -3,67 +3,121 @@ body{
     padding: 0;
 }
 
-header{
-    background: #D22F2F;
-    padding: 1em;
+
+/* Task1 */
+/* body{ */
+    /* У завданні сказано розширення екрану 1000 тому зробив під них якщо це забрати то в рядку буде
+    стільки продуктів скільки поміститься */
+    /* max-width: 1000px;
+}
+.product_list{
     text-align: center;
 }
 
-footer{
-    background: #D22F2F;
+.product_list section div{
+
+    padding: 10px 8px 10px 8px;
+
+    border: 1px solid rgb(163, 160, 160);
+    border-radius: 30px;
     text-align: center;
-    padding: 1em;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+
+    display: inline-block;
 }
 
-.footer-text{
-    color: rgb(255, 255, 255);
-    font-family: Roboto;
-}
-
-.header-text{
-    font-family: Roboto;
-    font-weight: 400;
-    margin: 0;
-    color: rgb(255, 255, 255);
-}
-.hero-img{
-    margin: 0 auto;
-    display: block;
-    padding: 1em;
-}
-
-img{
-    
-    border-radius: 26px;
-}
-
-.text-car span{
-    color: #FE0505;
-}
-
-.text-car{
-    margin: 0;
+h1{
     text-align: center;
-    font-family: Roboto;
-}
+} */
 
-.text-car p{
-    font-size: 24px;
-}
 
-.text-car h1{
-    font-size: 40px;
-}
 
-ul{
+/* Task2 */
+/* .menu{
     list-style: none;
-    display: flex;
 }
 
-.img-row{
-    display: flex;
+.menu li{
+    color: #fff;
 }
 
-.img-row img{
-    width: 25%;
+.menu li{
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    background-color: rgb(138, 136, 136);
 }
+
+.menu img{
+    width: 80px;
+}
+
+.menu li:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: rgb(110, 110, 110);
+} */
+
+
+
+/* Task3 */
+
+/* h3{
+    margin: 0;
+    color: #fff;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+
+    height: 80px;
+    background-color: #923158;
+}
+
+menu{
+    display: flex;
+    align-items: center;
+
+    height: 40px;
+    background-color: #6e1237;
+}
+
+aside{
+    background-color: #b65c81;
+}
+
+.asideOne{
+    max-width: 200px;
+
+    height: 100px;
+}
+
+.asideTwo{
+    max-width: 200px;
+}
+
+.asideThree{
+    max-width: 100px;
+}
+
+main{
+    background-color: #b65c81;
+
+    max-width: 400px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 15% 15% 30%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+} */
