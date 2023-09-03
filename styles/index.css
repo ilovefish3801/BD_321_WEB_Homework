@@ -1,69 +1,75 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: Roboto;
+
+    max-width: 1440px;
 }
 
 header{
-    background: #D22F2F;
-    padding: 1em;
-    text-align: center;
-}
-
-footer{
-    background: #D22F2F;
-    text-align: center;
-    padding: 1em;
-}
-
-.footer-text{
-    color: rgb(255, 255, 255);
-    font-family: Roboto;
-}
-
-.header-text{
-    font-family: Roboto;
-    font-weight: 400;
-    margin: 0;
-    color: rgb(255, 255, 255);
-}
-.hero-img{
-    margin: 0 auto;
-    display: block;
-    padding: 1em;
-}
-
-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    border-radius: 26px;
+    height: 200px;
 }
 
-.text-car span{
-    color: #FE0505;
-}
-
-.text-car{
-    margin: 0;
-    text-align: center;
-    font-family: Roboto;
-}
-
-.text-car p{
-    font-size: 24px;
-}
-
-.text-car h1{
-    font-size: 40px;
-}
-
-ul{
+header ul{
     list-style: none;
+
     display: flex;
 }
 
-.img-row{
+header ul li{
     display: flex;
+
+    transition: 0.5s;
+
+    align-items: center;
+    color: #FF9100;
+
+    margin-left: 15px;
 }
 
-.img-row img{
-    width: 25%;
+header ul li:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    color: #D56363;
+}
+
+
+.contanct_button{
+    transition: 0.5s;
+
+    background-color: #FF9100;
+
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+
+    width: 100px;
+    height: 30px;
+
+    margin-left: 10px;
+
+    margin-right: 20px;
+}
+
+.contanct_button:hover{
+    cursor: pointer;
+
+    transition: 0.5s;
+
+    background-color: #D56363;
+}
+
+.header_main{
+    display: flex;
+    
+    margin-right: 250px;
+
+}
+
+.header_text{
+    margin-left: 10px;
 }
