@@ -94,7 +94,7 @@ header ul li:hover{
 }
 
 .hero_text h1{
-    font-size:xx-large;
+    font-size: 42px;
     margin: 0;
 }
 
@@ -197,3 +197,30 @@ main> section{
     margin-left: 500px;
 }
 
+.actual_projects_text{
+    color: #FF9100;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    margin-top: 100px;
+}
+
+.actual_projects_text::before{
+    content: '';
+    display: inline-block;
+    width: 35%; 
+    border-top: 1px solid #FF9100; 
+    vertical-align: middle;
+
+}
+
+.actual_projects_text::after{
+    content: '';
+    display: inline-block;
+    width: 35%; 
+    border-top: 1px solid #FF9100;
+    vertical-align: middle;
+}
