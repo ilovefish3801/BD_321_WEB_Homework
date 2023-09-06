@@ -1,6 +1,9 @@
 body{
     margin: 0;
     padding: 0;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 
@@ -86,3 +89,46 @@ main>h1{
     }
     
 } */
+
+
+
+
+/* Task2 */
+
+body{
+    background-color: rgb(194, 194, 194);
+}
+
+img{
+    max-width: 400px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.cat{
+    max-width: 400px;
+}
+
+.cat_desc{
+    display: flex;
+
+    justify-content: right;
+    align-items: end;
+
+    transform: translateY(-25px);
+
+    background-color: #37516b;
+
+    color: #fff;
+
+    padding-bottom: 10px;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.big_desc{
+    padding-left: 60px;
+}
