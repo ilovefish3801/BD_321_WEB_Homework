@@ -110,8 +110,30 @@ header ul li:hover{
     background-color: #D56363;
 }
 
-.hero_photo img{
+.worker_img{
     border-radius: 30px;
+
+    width: 500px;
+    height: 324px;
+
+    background-image: url("/img/worker.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.worker_gradient{
+    position: absolute;
+    bottom: 0;
+
+
+    width: 100%;
+    height: 30%;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 25.53%, #D46363 96.89%);
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
 }
 
 .hero_photo{
@@ -119,7 +141,7 @@ header ul li:hover{
     
 }
 
-.hero_photo div{
+.hero_photo>div{
     margin: 0;
     position: absolute;
     bottom: 0;
@@ -134,23 +156,39 @@ header ul li:hover{
     margin-left: 15px;
 
     margin-top: 0;
+
+    margin-bottom: 10px;
 }
 
 
-.chevron_right{
+.chevron_right_holder{
     right: 0;
 
     top: 40%;
 
     width: 50px;
+    height: 50px;
+
+    background-image: url("/img/chevron_right.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    cursor: pointer;
 }
 
-.chevron_left{
+.chevron_left_holder{
     left: 0;
 
     top: 40%;
 
     width: 50px;
+    height: 50px;
+
+    background-image: url("/img/chevron_left.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    cursor: pointer;
 }
 
 .hero_photo h5{
@@ -185,6 +223,8 @@ main> section{
 }
 
 .slider_bullets div{
+
+    margin-top: 20px;
 
     background-color: #FF9100;
 
@@ -242,12 +282,18 @@ header nav{
     margin-top: 100px;
 }
 
+.actual_projects_text div{
+    width: 350px;
+}
+
 .actual_projects_text::before{
     content: '';
     display: inline-block;
     width: 50%; 
     border-top: 1px solid #FF9100; 
     vertical-align: middle;
+
+    margin-right: 10px;
 
 }
 
@@ -257,6 +303,8 @@ header nav{
     width: 50%; 
     border-top: 1px solid #FF9100;
     vertical-align: middle;
+    /* Kurulo */
+    margin-left: 10px;
 }
 
 .hero_text h3{
@@ -295,7 +343,7 @@ header nav{
 
 }
 
-.projects div{
+.projects>div{
     background-color: #FF9100F5;
 
     width: 250px;
@@ -318,10 +366,17 @@ header nav{
     position: absolute;
 
     bottom: 15px;
+
+    font-size: 15px;
 }
 
 .actual_projects{
     display: block;
+}
+
+.projects>div>img{
+    max-width: 140px;
+    max-height: 140px;
 }
 
 .projectOne span{
@@ -330,6 +385,184 @@ header nav{
     justify-content: center;
 
     align-items: center;
+}
+
+.pOne_hover{
+    background-color: #D46363;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+
+    color: #fff;
+
+    transition: 1s;
+    opacity: 0;
+
+    scale: 0;
+}
+
+.projectOne:hover .pOne_hover{
+    transition: 0.5s;
+    opacity: 100;
+    scale: 1;
+}
+
+.pOne_hover img{
+    width: 100px;
+}
+
+.projectOne p{
+    margin-left: 12px;
+}
+
+.projectTwo{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.projectTwo p{
+    margin-left: 4px;
+}
+
+.pTwo_hover{
+    background-color: #D46363;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+
+    color: #fff;
+
+    transition: 1s;
+    opacity: 0;
+
+    scale: 0;
+}
+
+.projectTwo:hover .pTwo_hover{
+    transition: 0.5s;
+    scale: 1;
+    opacity: 100;
+}
+
+.pTwo_hover img{
+    width: 100px;
+}
+
+.projectTwo p{
+    margin-left: 12px;
+}
+
+.projectThree{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+.pThree_hover{
+    background-color: #D46363;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+
+    color: #fff;
+
+    transition: 1s;
+    opacity: 0;
+
+    scale: 0;
+}
+
+.pThree_hover img{
+    width: 100px;
+}
+
+.projectThree p{
+    margin-left: 12px;
+}
+
+.projectThree>img{
+    width: 140px;
+    height: 140px;
+}
+
+.projectThree:hover .pThree_hover{
+    transition: 0.5s;
+    opacity: 100;
+
+    scale: 1;
+}
+
+
+.projectFour span{
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.pFour_hover{
+    background-color: #D46363;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+
+    color: #fff;
+
+    transition: 1s;
+    opacity: 0;
+
+    scale: 0;
+}
+
+.projectFour:hover .pFour_hover{
+    transition: 0.5s;
+    opacity: 100;
+    scale: 1;
+}
+
+.pFour_hover img{
+    width: 100px;
+}
+
+.pFour_hover p{
+    margin-left: 12px;
 }
 
 .projects img{
@@ -354,7 +587,7 @@ header nav{
 }
 
 .team_text{
-    color: #FF9100;
+    color: #D46363;
     font-family: Roboto;
     font-size: 24px;
     font-style: normal;
@@ -362,23 +595,380 @@ header nav{
     line-height: normal;
 
     margin-top: 100px;
+
+    background-color: #FFA8000F;
 }
 
 .team_text::before{
     content: '';
     display: inline-block;
     width: 50%; 
-    border-top: 1px solid #FF9100; 
+    border-top: 1px solid #D46363; 
     vertical-align: middle;
 
+    margin-right: 10px;
 }
 
 .team_text::after{
     content: '';
     display: inline-block;
     width: 50%; 
-    border-top: 1px solid #FF9100;
+    border-top: 1px solid #D46363;
     vertical-align: middle;
+
+    margin-left: 10px;
+}
+
+.photo_team{
+    max-width: 200px;
+    max-height: 200px;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    color: #fff;
+}
+
+.center_photo{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.team_photos{
+    margin-top: 30px;
+    display: flex;
+
+    position: relative;
+}
+
+.photo_team>div>img{
+    width: 40px;
+
+    margin-top: 12px;
+}
+
+.teamP1{
+    background-image: url("/img/teacher1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.teamP2{
+    background-image: url("/img/teacher2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.teamP3{
+    background-image: url("/img/teacher3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photo_team>div h1{
+    font-size: 26px; margin-bottom: 0; margin-top: 10px;
+}
+
+.photo_team>div h5{
+    margin-top:0; margin-bottom: 4px;
+}
+
+.photo_team>div h4{
+    font-size: 14px; margin-top: 10px;
+}
+
+.photo_team>div{
+    transition: 1s;
+    opacity: 0;
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background-color: rgba(212, 99, 99, 0.90);
+}
+
+.photo_team:hover div{
+    transition: 1s;
+    opacity: 100;
+}
+
+.team_logo_left{
+    transform: rotate(45deg);
+
+    margin-top: 25px;
+}
+
+.team_logo_right{
+    transform: rotate(45deg);
+
+    margin-top: 25px;
+}
+
+.team{
+    justify-content: space-around;
+
+    background-color: #FFA8000F;
+}
+
+
+.team_sliders{
+    background-color: #FFA8000F;
+}
+
+.team_sliders div.current_bullet{
+    background-color: #D56363;
+
+    margin-left: 0;
+}
+
+.team_sliders div{
+    background-color: #C4C4C4;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+
+    margin-left: 12px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    width: 20px;
+    height: 20px;
+
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.joinus_btn{
+    transition: 0.5s;
+
+    background-color: #FF9100;
+
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+
+    width: 300px;
+    height: 60px;
+
+    font-size: 20px;
+    font-family: Roboto;
+    /* oluruK */
+    margin-top: 40px;
+}
+
+.joinus_btn h5{
+    margin: 0;
+    padding: 0;
+}
+
+.joinus_btn:hover{
+    cursor: pointer;
+
+    transition: 0.5s;
+
+    background-color: #D56363;
+}
+
+.partners_text{
+    margin-top: 80px;
+}
+
+.partners{
+    display: flex;
+    flex-direction: row;
+}
+
+.partners>div{
+    display: flex;
+}
+
+.partners_logo{
+    margin-left: 30px;
+
+    transition: 1s;
+    
+    filter: grayscale(100%);
+}
+
+.partners>div:hover .partners_logo{
+    transition: 1s;
+    filter: grayscale(0%);
+}
+
+.partners_logo_text{
+    margin-left: 10px;
+}
+
+
+.partners{
+    margin-bottom: 80px;
+}
+
+
+
+footer{
+    background-color: #FF9100E5;
+
+
+    color: #fff;
+
+    
+
+    justify-content: space-around;
+
+    height: 220px;
+
+    font-family: Roboto;
+}
+
+footer a{
+    color: #fff;
+
+    text-decoration: none;
+}
+
+.footer_nav{
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.footer_logo{
+    width: 80px;
+
+    max-width: 80px;
+
+    height: 80px;
+
+    max-height: 80px;
+}
+
+.logo{
+    display: flex;
+
+    margin-top: 6px;
+}
+
+.footer_desc{
+    font-size: 22px;
+
+    margin-left: 8px;
+}
+
+h4{
+    padding: 0;
+    margin: 0;
+}
+
+.nav_container{
+    font-size: 20px;
+
+    margin-top: 6px;
+}
+
+.nav_container li{
+    margin-bottom: 4px;
+}
+
+.footer_phone{
+    display: flex;
+
+    align-items: center;
+
+    font-size: 16px;
+}
+
+.footer_phone img{
+    max-width: 50px;
+}
+
+.footer_email{
+    display: flex;
+
+    align-items: center;
+}
+
+.photo_text{
+    margin-left: 4px;
+}
+
+.telegram{
+    max-width: 50px;
+    max-height: 50px;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url("/img/telegram\ 1.png");
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+    
+}
+
+.facebook{
+    max-width: 50px;
+    max-height: 50px;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url("/img/facebook\ 1.png");
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+
+    margin-left: 20px;
+}
+
+.instagram{
+    max-width: 50px;
+    max-height: 50px;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url("/img/instagram\ 1.png");
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+
+    margin-left: 20px;
+}
+
+.media_links{
+    display: flex;
+
+    justify-content: right;
+
+    margin-right: 50px;
+
+    margin-top: 10px;
+}
+
+
+
+
+.nav_container div{
+    margin-bottom: 6px;
+}
+
+.mobile{
+    display: none;
 }
 
 @media screen and (min-width: 1500px) {
@@ -395,4 +985,62 @@ header nav{
         margin-right: 385px;
     }
     
+}
+
+@media screen and (min-width: 1500px) {
+
+    .media_links{
+        margin-right: 150px;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .worker_img{
+        max-width: 400px;
+    }
+
+    .slider_bullets{ 
+        margin-right: 190px !important; 
+    }
+
+    .hero_text{
+        margin-right: 150px;
+    }
+
+    .partners_logo img{
+        max-width: 43px;
+        max-height: 44px;
+        
+    }
+
+    .partners_logo_text{
+        font-size: 14px;
+    }
+
+    .partners{
+        
+    }
+    
+}
+
+
+.mobile{
+    display: none;
+}
+@media screen and (max-width: 1005px) {
+    main{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
 }
