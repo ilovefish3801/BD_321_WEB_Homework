@@ -282,10 +282,6 @@ header nav{
     margin-top: 100px;
 }
 
-.actual_projects_text div{
-    width: 350px;
-}
-
 .actual_projects_text::before{
     content: '';
     display: inline-block;
@@ -971,6 +967,138 @@ h4{
     display: none;
 }
 
+
+.burger{
+    height: 24px;
+    width: 36px;
+    position: relative;
+
+    cursor: pointer;
+}
+
+.burger :first-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ff9100;
+    transition: 0.5s;
+}
+
+.burger :nth-child(2){
+    position: absolute;
+    top: calc(22px/2 - 2px/2);
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #d46363;
+    transition: 0.5s;
+}
+
+.burger :last-child{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ff9100;
+    transition: 0.5s;
+}
+
+.burger.active :first-child{
+    transform: rotate(45deg);
+    top: calc(50% - 2px);
+    transition: 0.5s;
+}
+
+.burger.active :nth-child(2){
+    display: none;
+    transition: 0.5s;
+}
+
+.burger.active :last-child{
+    transform: rotate(-45deg);
+    bottom: calc(50% - 1px);
+    transition: 0.5s;
+}
+
+header nav{
+    display: flex;
+
+    align-items: center;
+}
+
+
+.mobile_menu{
+    background-color: #fff;
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+    z-index: 1000;
+
+    transform: translateY(-150vh);
+
+    transition: 0.5s;
+}
+
+.mobile_menu.active{
+    transition: 0.5s;
+    transform: translateY(-60px);
+}
+
+.mobile_menu ul{
+    list-style: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile_menu ul li{
+    transition: 0.5s;
+    color: #FF9100;
+
+    cursor: pointer;
+
+    font-size: 24px;
+
+    margin-top: 30px;
+}
+
+.mobile_menu ul li:hover{
+    transition: 0.5s;
+    color: #D56363;
+}
+
+body.fixed{
+    overflow-y: hidden;
+}
+
+header.color{
+    background-color: #000000;
+
+    transition: 0.5s;
+}
+
+.mobilehr{
+    border-color: #FF9100;
+
+}
+
+.burger{
+    display: none;
+}
+
+.mobile_menu{
+    display: none;
+}
+
 @media screen and (min-width: 1500px) {
 
     .hero_photo{
@@ -1024,23 +1152,325 @@ h4{
     
 }
 
-
-.mobile{
+.project_change_right{
     display: none;
 }
+
+.project_change_left{
+    display: none;
+}
+
+.actual_projects_text div{
+    white-space: nowrap;
+}
+
 @media screen and (max-width: 1005px) {
-    main{
+    header nav ul li{
         display: none;
     }
 
-    footer{
+    .hero{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .worker_img{
+        max-width: 600px;
+    }
+
+    .hero_photo{
+        max-width: 500px;
+
+        margin-top: 100px;
+        margin-right: 0;
+        
+    }
+
+    .burger{
+        display: block;
+    }
+    
+    .mobile_menu{
+        display: block;
+    }
+
+    .hero_text{
+        margin-right: 0;
+    }
+
+    .hero_text_button{
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider_bullets{
+        margin-right: 0 !important;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectOne{
+        display: none !important;
+    }
+
+    .projectTwo{
+        display: none !important;
+    }
+
+    .projectThree{
+        display: none !important;
+    }
+
+    .team_logo_left{
         display: none;
     }
-    header{
+
+    .team_logo_right{
         display: none;
+    }
+
+    .photo_team{
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .photo_team div{
+        max-width: 150px;
+        max-height: 150px;
+
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+    .photo_team div h1{
+        font-size: 14px;
+    }
+
+    .photo_team div h5{
+        font-size: 12px;
+    }
+
+    .photo_team div h4{
+        font-size: 12px;
+
+        margin-top: 2px;
+    }
+
+    .joinus_btn{
+        border-radius: 16px;
+        max-width: 240px;
+        max-height: 50px;
+    }
+
+    .team_sliders div{
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    .partners{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .partners div{
+        max-width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 1005px) {
+    .logo{
+        display: none;
+    }
+
+    .li_photo{
+        display: none;
+    }
+
+    .footer_nav{
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+    }
+
+    .media_links{
+        justify-content: center;
+
+        align-items: center;
+
+        margin: 0;
     }
 
     .mobile{
         display: block;
+    }
+
+    h4{
+        font-weight: 400;
+    }
+
+    footer{
+        height: 250px;
+    }
+    
+    .second_nav_container{
+        margin-right: 10px;
+    }
+
+    .header_text{
+        display: none;
+    }
+
+    .project_change_left{
+        display: block;
+        position: absolute;
+
+        z-index: 999;
+
+        cursor: pointer;
+
+        width: 32px;
+        height: 32px;
+        max-width: 32px;
+        max-height: 32px;
+
+        background-image: url("/img/project_change_left.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        left: 1px;
+
+        margin: 10px;
+    }
+
+    .project_change_right{
+        display: block;
+        position: absolute;
+
+        z-index: 999;
+
+        cursor: pointer;
+
+        width: 32px;
+        height: 32px;
+        max-width: 32px;
+        max-height: 32px;
+
+        background-image: url("/img/project_change_right.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        right: 1px;
+
+        margin: 10px;
+    }
+
+    .projectFour{
+        margin-left: 0 !important;
+    }
+
+    .mobile_partner .partners_logo{
+        margin-left: 0 ;
+    }
+
+    .projects_desc{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .header_main{
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .projects_desc span{
+        display: block;
+    }
+
+    .projects_desc{
+        display: block;
+
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .worker_img{
+        max-width: 400px;
+    }
+
+    .hero_photo{
+        max-width: 500px;
+
+        margin-top: 100px;
+        margin-right: 0;
+        
+    }
+
+    .photo_team{
+        max-width: 110px;
+        max-height: 110px;
+    }
+
+    .photo_team div{
+        max-width: 110px;
+        max-height: 110px;
+
+        min-width: 110px;
+        min-height: 110px;
+    }
+
+    .photo_team div h1{
+        font-size: 12px;
+    }
+
+    .photo_team div h5{
+        font-size: 10px;
+    }
+
+    .photo_team div h4{
+        font-size: 8px;
+
+        margin-top: 2px;
+    }
+
+    .photo_team div img{
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    .team_sliders div{
+        max-width: 14px;
+        max-height: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header_main{
+        margin-left: 0;
+    }
+
+    header nav{
+        margin-right: 0;
+    }
+
+    .worker_img{
+        max-width: 300px;
+    }
+
+    .hero_photo{
+        max-width: 500px;
+
+        margin-top: 100px;
+        margin-right: 0;
+        
     }
 }
