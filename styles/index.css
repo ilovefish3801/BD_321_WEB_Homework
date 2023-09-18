@@ -1168,6 +1168,14 @@ body.color{
     cursor: pointer;
 }
 
+.mobile_menu ul{
+    padding-left: 0;
+}
+
+.mobile hr{
+    border-color: #000000;
+}
+
 @media screen and (max-width: 1005px) {
     header nav ul li{
         display: none;
