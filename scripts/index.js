@@ -6,6 +6,7 @@ BURGER_BTN.addEventListener("click", ()=>{
 
     const BODY = document.querySelector("body")
     BODY.classList.toggle('fixed')
-    const HEADER = document.querySelector("header")
-    HEADER.classList.toggle('color')
+    
+    const BODY_COLOR = document.querySelector("body")
+    BODY_COLOR.classList.toggle('color')
 })
