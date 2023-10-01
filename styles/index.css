@@ -3,67 +3,201 @@ body{
     padding: 0;
 }
 
+header div{
+    color: #fff;
+}
+
 header{
-    background: #D22F2F;
-    padding: 1em;
-    text-align: center;
-}
-
-footer{
-    background: #D22F2F;
-    text-align: center;
-    padding: 1em;
-}
-
-.footer-text{
-    color: rgb(255, 255, 255);
-    font-family: Roboto;
-}
-
-.header-text{
-    font-family: Roboto;
-    font-weight: 400;
-    margin: 0;
-    color: rgb(255, 255, 255);
-}
-.hero-img{
-    margin: 0 auto;
-    display: block;
-    padding: 1em;
-}
-
-img{
+    background-color: #1E3173;
+    height: 60px;
     
-    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.text-car span{
-    color: #FE0505;
+footer div{
+    color: #fff;
+}
+footer{
+    background-color: #1E3173;
+    height: 60px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
 }
 
-.text-car{
-    margin: 0;
-    text-align: center;
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-family: Roboto;
 }
 
-.text-car p{
+.mainSect{
+    border: 2px solid rgba(30, 49, 115, 0.30);
+    border-radius: 12px;
+
+    width: 500px;
+    height: 560px;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.jobSect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jobSect__btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(230, 230, 230);
+
+    width: 400px;
+    height: 50px;
+
+    border-radius: 24px;
+}
+
+.jobSect__btns div{
+    color: rgb(124, 124, 124);
+    opacity: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.6s;
+
+    cursor: pointer;
+
+    width: 200px;
+}
+
+.jobSect__btns div.active{
+    cursor:default;
+
+    color: black;
+    opacity: 100%;
+    
+    background-color: #fff;
+    border-radius: 24px;
+    width: 160px;
+    height: 50px;
+
+    transition: 0.6s;
+}
+
+.jobSect__btns div{
+    font-weight: 600;
+}
+
+.jobSect__text{
     font-size: 24px;
+    font-weight: 700;
+
+    font-family: Raleway !important;
 }
 
-.text-car h1{
-    font-size: 40px;
-}
-
-ul{
-    list-style: none;
+.form__cid{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 425px;
 }
 
-.img-row{
+.form__cid input{
+    width: 175px;
+    height: 44px;
+}
+
+input{
+    border-radius: 8px;
+    border: 1px solid rgba(30, 49, 115, 0.30);
+}
+
+form{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.img-row img{
-    width: 25%;
+form input{
+    width: 390px;
+    height: 44px;
+
+    margin-top: 14px;
+    font-size: 16px;
+
+    padding-left: 10px;
+}
+
+.form__check input{
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.form__check{
+    display: flex;
+
+    margin-top: 10px;
+
+}
+
+
+.form__checkbox_text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.form__checkbox_holder{
+    display: flex;
+    align-items: flex-start;
+
+    margin-right: 14px;
+}
+
+#form__submit{
+    border-radius: 24px;
+    border: none;
+    background: rgba(30, 49, 115, 0.80);
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+
+    margin-top: 30px;
+    width: 400px;
+}
+
+.registeredSect{
+    display: flex;
+
+    font-size: 14px;
+}
+
+.form__login{
+    margin-left: 10px;
+}
+
+.form__login a{
+    text-decoration: none;
 }
