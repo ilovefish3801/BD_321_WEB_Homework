@@ -201,3 +201,36 @@ form input{
 .form__login a{
     text-decoration: none;
 }
+
+#form__submit:disabled{
+    opacity: 80%;
+}
+
+#form__submit:enabled{
+    opacity: 100%;
+    background-color: #1E3173;
+}
+
+.form__password_div{
+    position: relative;
+}
+
+.form__password_div img{
+    position: absolute;
+
+    cursor: pointer;
+
+    right: 10px;
+    bottom: 13px;
+
+    max-width: 30px;
+    max-height: 24px;
+
+    width: 40px;
+    height: 30px;
+}
+
+.form__password_div_text{
+    max-width: 32px;
+    max-height: 32px;
+}

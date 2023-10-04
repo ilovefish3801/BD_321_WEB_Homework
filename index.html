@@ -19,23 +19,31 @@
         <div>Header</div>
     </header>
     <main>
-        <section class="mainSect">
+        <section class="mainSect" style="margin-top: 100px;">
             <section class="jobSect">
                 <h1 class="jobSect__text">Шукаєте роботу чи няню?</h1>
                 <section class="jobSect__btns">
-                    <div class="jobSect__btns_work" style="font-size: 16px;">Шукаю роботу</div>
-                    <div class="jobSect__btns_babysitter active" style="font-size: 16px;">Шукаю няню</div>
+                    <div data-role="work" class="jobSect__btns_work" style="font-size: 16px;">Шукаю роботу</div>
+                    <div data-role="babysitter" class="jobSect__btns_babysitter active" style="font-size: 16px;">Шукаю няню</div>
                 </section>
             </section>
             <section class="formSect">
-                <form action="form">
+                <form action="form" id="form">
                     <section class="form__cid">
-                        <input type="text" placeholder="Name" name="Name" id="form__cid_name">
-                        <input type="text" placeholder="Surname" name="Surname" id="form__cid_surname">
+                        <input required type="text" placeholder="Name" name="Name" id="form__cid_name">
+                        <input required type="text" placeholder="Surname" name="Surname" id="form__cid_surname">
                     </section>
-                    <input type="text" placeholder="Email" name="Email" id="form__email">
-                    <input type="password" placeholder="Password" name="Password" id="form__password">
-                    <input type="password" placeholder="Password Confirm" name="PasswordConfirm" id="form__passwordConfirm">
+                    <input required type="text" placeholder="Email" name="Email" id="form__email">
+                    <div class="form__password_div">
+                        <input required type="password" placeholder="Password" name="Password" id="form__password">
+                        <img onclick="passwordTypePass('#form__password_div_text_1', '#form__password', '#form__password_div_password_1')" src="img/text.png" alt="" class="form__password_div_text" id="form__password_div_text_1">
+                        <img onclick="passwordTypeText('#form__password_div_password_1', '#form__password', '#form__password_div_text_1')" src="img/password.png" alt="" id="form__password_div_password_1">
+                    </div>
+                    <div class="form__password_div">
+                        <input required type="password" placeholder="Password Confirm" name="PasswordConfirm" id="form__passwordConfirm">
+                        <img onclick="passwordTypePass('#form__password_div_text_2', '#form__passwordConfirm', '#form__password_div_password_2')" src="img/text.png" alt="" id="form__password_div_text_2" class="form__password_div_text">
+                        <img onclick="passwordTypeText('#form__password_div_password_2', '#form__passwordConfirm', '#form__password_div_text_2')" src="img/password.png" alt="" id="form__password_div_password_2">
+                    </div>
                     
                     <section class="form__check">
                         <div class="form__checkbox_holder">
@@ -46,7 +54,7 @@
                         </div>
                     </section>
                     
-                    <input type="submit" name="Submit" id="form__submit" value="Зареєструватись">
+                    <input type="submit" name="Submit" id="form__submit" disabled value="Зареєструватись">
                 
                 </form>
 
