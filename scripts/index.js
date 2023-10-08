@@ -31,6 +31,24 @@ const showCounterCart = ()=>{
     }
 }
 
+const removeProductFromCart = (product_id)=>{
+    let cart = localStorage.getItem('cart')
+
+    cart ? cart = JSON.parse(cart) : cart = []
+
+    if(cart.length > 0){
+        let index = cart.findIndex(product => product.id == product_id)
+        if(index != -1 && cart[index].qty > 1){
+            cart[index].qty = cart[index].qty - 1
+        }else if(index != -1){
+            cart.splice(index, 1)
+        }
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart))
+    showCounterCart()
+}
+
 const addProductsToCart = (product_id)=>{
     // get cart from LS
     let cart = localStorage.getItem('cart')
@@ -63,6 +81,7 @@ const addProductsToCart = (product_id)=>{
     // display counter
 
 }
+
 const showProductsOnDOM = async (products, selector) => {
     // create html
     let html = ''
@@ -77,7 +96,7 @@ const showProductsOnDOM = async (products, selector) => {
                 <h4>${price} $</h4>
                 <p>${description}</p>
                 <button id="${id}" class="add_to_cart">Add to cart</button>
-                <button>Delete from Cart</button>
+                <button id="${id}" class="delete_from_cart"">Delete from Cart</button>
             </div>
             `
         })
@@ -96,9 +115,27 @@ const showProductsOnDOM = async (products, selector) => {
             addProductsToCart(product_id)
         })
     })
+
+    const REMOVE_FROM_CART_BTNS = document.querySelectorAll('.delete_from_cart')
+    REMOVE_FROM_CART_BTNS.forEach((btn)=>{
+        btn.addEventListener('click', (e)=>{
+            const product_id = btn.getAttribute('id')
+            
+            removeProductFromCart(product_id)
+        })
+    })
 }
 
-const showCategorysOnSelect = (categorys, selector)=>{}
+const showCategorysOnDOM = (categories, selector)=>{
+    const SELECT = document.querySelector(selector)
+
+    let html = ``
+    categories.map((e)=>{
+        html += `<option>${e}</option>`
+    })
+
+    SELECT.innerHTML += html
+}
 
 const addNewProduct = async () => {
     await fetch('https://fakestoreapi.com/products', {
@@ -162,16 +199,40 @@ document.addEventListener('DOMContentLoaded', async () => {
     const ADD_Q_BTN = document.querySelector('.add_q_params')
     const READ_Q_BTN = document.querySelector('.read_q_params')
     const SCROLL_TO_BTN = document.querySelector('.scroll_to')
-    
-    const INPUT_CATEGORY = document.querySelector("#filter_category")
+    const CATEGORY_SELECT = document.querySelector('#filter_category')
+    const DELETE_CART_BTN = document.querySelector('.clear_cart')
     // get products
+    
     const PRODUCTS = await getAllProducts()
-    // const CATEGORYS = await getCategorys()
+    const CATEGORIES = await getCategorys()
 
     // display products
     showProductsOnDOM(PRODUCTS, ".products__area")
+    showCategorysOnDOM(CATEGORIES, '#filter_category')
 
     // add event listeners
+    DELETE_CART_BTN.addEventListener('click', (e)=>{
+        const CART = localStorage.getItem('cart')
+
+        const empty = []
+        CART ? localStorage.setItem('cart',JSON.stringify(empty)) : localStorage.setItem('cart',JSON.stringify(empty))
+        showCounterCart()
+    })
+    CATEGORY_SELECT.addEventListener('change', (e)=>{
+        const VALUE = e.target.value
+        const FILTERED_PRODUCTS = PRODUCTS.filter(products => products.category == VALUE)
+        const CATEGORY_FILTERED = localStorage.getItem('dynamic_products')
+
+        if (CATEGORY_FILTERED){
+            localStorage.removeItem('category_filtered')
+            localStorage.setItem('category_filtered', JSON.stringify(FILTERED_PRODUCTS))
+        }else{
+            localStorage.setItem('category_filtered', JSON.stringify(FILTERED_PRODUCTS))
+        }
+        
+        showProductsOnDOM(FILTERED_PRODUCTS, '.products__area')
+
+    })
     SCROLL_TO_BTN.addEventListener('click', (e)=>{
         const targetElement = document.querySelector(".read_q_params")
         targetElement.scrollIntoView({behavior: "smooth"})
@@ -179,16 +240,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     INPUT_SELECT.addEventListener("change", (e) => {
         // get dynamic products
         let current_products
+        const CATEGORY_FILTERED = localStorage.getItem('category_filtered')
         const DYNAMIC_PRODUCTS = localStorage.getItem('dynamic_products')
-        DYNAMIC_PRODUCTS ? current_products = JSON.parse(DYNAMIC_PRODUCTS) : current_products = PRODUCTS
-        sortProducts(current_products, e.target.value, ".products__area")
-    })
-    INPUT_CATEGORY.addEventListener("change", (e) => {
 
+        if(DYNAMIC_PRODUCTS){
+            current_products = JSON.parse(DYNAMIC_PRODUCTS)
+        }else if(CATEGORY_FILTERED){
+            current_products= JSON.parse(CATEGORY_FILTERED)
+        }else{
+            current_products = PRODUCTS
+        }
+        sortProducts(current_products, e.target.value, ".products__area")
     })
 
     INPUT_SEARCH.addEventListener("input", (e) => {
-        filterBySearchQuery(PRODUCTS, e.target.value, ".products__area")
+        const CATEGORY_FILTERED = localStorage.getItem('category_filtered')
+
+        if(CATEGORY_FILTERED){
+            filterBySearchQuery(JSON.parse(CATEGORY_FILTERED), e.target.value, ".products__area")
+        }else{
+            filterBySearchQuery(PRODUCTS, e.target.value, ".products__area")
+        }
     })
 
     REFRESH_PAGE_BTN.addEventListener('click', (e)=>{
@@ -217,5 +289,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 document.addEventListener('DOMContentLoaded', ()=>{
     localStorage.removeItem('dynamic_products')
+    localStorage.removeItem('category_filtered')
 
 })
