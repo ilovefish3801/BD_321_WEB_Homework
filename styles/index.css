@@ -54,7 +54,7 @@ body{
 
 
 /* Task 3 */
-body{
+/* body{
     margin: 100px;
 }
 .info{
@@ -83,4 +83,51 @@ body{
 
 .desc.active{
     display: block;
+} */
+
+
+
+
+/* Task 4 */
+/* body{
+    background-color: antiquewhite;
+} */
+
+
+
+
+
+
+/* Task 6 */
+
+/* body{
+    background-color: antiquewhite;
+}
+
+ul li a{
+    text-decoration: none;
+} */
+
+
+
+/* Task 7 */
+body{
+    background-color: antiquewhite;
+}
+
+ol{
+    font-size: 24px;
+}
+
+ol li{
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+ol li.clicked{
+    color: rgb(17, 129, 204);
+}
+
+ol li.checked{
+    background-color: rgb(255, 136, 0);
 }
