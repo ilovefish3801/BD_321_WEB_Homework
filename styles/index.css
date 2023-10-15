@@ -4,6 +4,13 @@ body {
 }
 
 header {
+  height: 800px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/Hero_Hotel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header_menu {
   display: flex;
   justify-content: space-around;
 }
@@ -36,11 +43,12 @@ header {
   align-items: center;
 }
 .headerNav__li {
-  margin-right: 20px;
+  margin-right: 60px;
   display: flex;
 }
 .headerNav__li_a {
   text-decoration: none;
+  color: #fff;
 }
 .headerNav__li_a_selected {
   text-decoration: underline;
@@ -48,4 +56,10 @@ header {
 }
 .headerNav__li_a:hover {
   text-decoration: underline;
+}
+
+.header_text__text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=index.css.map */
