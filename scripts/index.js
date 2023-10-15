@@ -64,76 +64,108 @@
 
 
 // Task 7
-let nowa_book
-let previous_book
-const clickOnBook = (book)=>{
-    const BOOK = document.querySelector(book)
-    previous_book = nowa_book
+// let nowa_book
+// let previous_book
+// const clickOnBook = (book)=>{
+//     const BOOK = document.querySelector(book)
+//     previous_book = nowa_book
 
-    if(previous_book){
-        previous_book.classList.remove('clicked')
-    }
+//     if(previous_book){
+//         previous_book.classList.remove('clicked')
+//     }
 
-    nowa_book = BOOK
-    BOOK.classList.add('clicked')
-}
+//     nowa_book = BOOK
+//     BOOK.classList.add('clicked')
+// }
 
-const ctrlOnBook = (book)=>{
-    const BOOK = document.querySelector(book)
+// const ctrlOnBook = (book)=>{
+//     const BOOK = document.querySelector(book)
 
-    BOOK.classList.toggle('checked')
-}
+//     BOOK.classList.toggle('checked')
+// }
 
-let nowa_check
-let previous_check
-const shiftOnBook = (book)=>{
-    const BOOK = document.querySelector(book)
+// let nowa_check
+// let previous_check
+// const shiftOnBook = (book)=>{
+//     const BOOK = document.querySelector(book)
     
-    previous_check = nowa_check
+//     previous_check = nowa_check
     
-    nowa_check = BOOK.classList[1]
+//     nowa_check = BOOK.classList[1]
     
     
-    if(previous_check){
-        let previousNum = previous_check[previous_check.length - 1]
-        let nowaNum = nowa_check[nowa_check.length - 1]
-        if(previousNum > nowaNum){
-            for (let i = nowaNum; i <= previousNum; i++) {
-                let element = document.querySelector(`.book${i}`)
-                element.classList.add('checked')
-            }
-        }else{
-            for (let i = previousNum; i <= nowaNum; i++) {
-                let element = document.querySelector(`.book${i}`)
-                element.classList.add('checked')
-            }
-        }
-    }
-}
+//     if(previous_check){
+//         let previousNum = previous_check[previous_check.length - 1]
+//         let nowaNum = nowa_check[nowa_check.length - 1]
+//         if(previousNum > nowaNum){
+//             for (let i = nowaNum; i <= previousNum; i++) {
+//                 let element = document.querySelector(`.book${i}`)
+//                 element.classList.add('checked')
+//             }
+//         }else{
+//             for (let i = previousNum; i <= nowaNum; i++) {
+//                 let element = document.querySelector(`.book${i}`)
+//                 element.classList.add('checked')
+//             }
+//         }
+//     }
+// }
 
-const BOOKS = document.querySelectorAll('.book')
+// const BOOKS = document.querySelectorAll('.book')
 
 
-document.addEventListener('keydown', (e)=>{
-     if(e.key == 'Control'){
-        BOOKS.forEach((book)=>{
-            book.setAttribute('onclick', `ctrlOnBook('.${book.classList[1]}')`)
-    })
-    }else if(e.key == 'Shift'){
-        BOOKS.forEach((book)=>{
-            book.setAttribute('onclick', `shiftOnBook('.${book.classList[1]}')`)
-    })
-    }
-})
+// document.addEventListener('keydown', (e)=>{
+//      if(e.key == 'Control'){
+//         BOOKS.forEach((book)=>{
+//             book.setAttribute('onclick', `ctrlOnBook('.${book.classList[1]}')`)
+//     })
+//     }else if(e.key == 'Shift'){
+//         BOOKS.forEach((book)=>{
+//             book.setAttribute('onclick', `shiftOnBook('.${book.classList[1]}')`)
+//     })
+//     }
+// })
 
-document.addEventListener('keyup', (e)=>{
-    if(e.key == 'Control'){
-        BOOKS.forEach((book)=>{
-            book.setAttribute('onclick', `clickOnBook('.${book.classList[1]}')`)
-    })
-    }else if(e.key == 'Shift'){
-        BOOKS.forEach((book)=>{
-            book.setAttribute('onclick', `clickOnBook('.${book.classList[1]}')`)
-    })
-    }
-})
+// document.addEventListener('keyup', (e)=>{
+//     if(e.key == 'Control'){
+//         BOOKS.forEach((book)=>{
+//             book.setAttribute('onclick', `clickOnBook('.${book.classList[1]}')`)
+//     })
+//     }else if(e.key == 'Shift'){
+//         BOOKS.forEach((book)=>{
+//             book.setAttribute('onclick', `clickOnBook('.${book.classList[1]}')`)
+//     })
+//     }
+// })
+
+
+
+// task 8
+
+
+// const TEXT_CONTAINER = document.querySelector('.text_container')
+// const TEXT_AREA = document.querySelector('#edit_mode')
+
+
+
+// document.addEventListener('keydown', (e)=>{
+//     if(e.ctrlKey && e.key == 'e'){
+//         e.preventDefault()
+//         let text = TEXT_CONTAINER.textContent
+        
+//         TEXT_AREA.textContent = text
+
+//         TEXT_CONTAINER.style.display = 'none'
+        
+//         TEXT_AREA.style.display = 'block'
+//     }else if(e.ctrlKey && e.key == 's'){
+//         e.preventDefault()
+        
+//         edited_text = TEXT_AREA.value
+
+//         TEXT_CONTAINER.innerHTML = edited_text
+
+//         TEXT_AREA.style.display = 'none'
+//         TEXT_CONTAINER.style.display = 'block'
+//     }
+// })

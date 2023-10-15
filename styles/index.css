@@ -111,7 +111,7 @@ ul li a{
 
 
 /* Task 7 */
-body{
+/* body{
     background-color: antiquewhite;
 }
 
@@ -130,4 +130,53 @@ ol li.clicked{
 
 ol li.checked{
     background-color: rgb(255, 136, 0);
+} */
+
+
+
+
+
+
+/* Task 8 */
+/* body{
+    background-color: antiquewhite;
 }
+
+.text_container{
+    font-size: 18px;
+}
+
+#edit_mode{
+    display: none;
+} */
+
+
+
+
+
+
+/* Task 9 */
+
+/* body{
+    background-color: antiquewhite;
+
+    margin: 100px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+
+th{
+    border: 2px solid black;
+    padding: 4px;
+
+    cursor: pointer;
+}
+
+
+td{
+    border: 2px solid black;
+    padding: 8px;
+} */
