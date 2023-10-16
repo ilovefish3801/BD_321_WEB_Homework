@@ -109,4 +109,54 @@
 .main_room2__img img {
   max-width: 440px;
   max-height: 440px;
+}
+
+.main_change_page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+.main_change_page__title {
+  font-size: 42px;
+  margin-bottom: 0;
+}
+.main_change_page__p {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.main_change_page__desc {
+  font-weight: 500;
+}
+.main_change_page__btns {
+  display: flex;
+}
+.main_change_page__btns_btn1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #E0B973;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 900;
+}
+.main_change_page__btns_btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #E0B973;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: 900;
 }/*# sourceMappingURL=home.css.map */

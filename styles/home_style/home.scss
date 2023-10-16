@@ -156,3 +156,67 @@
        }
     }
 }
+
+.main_change_page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 80px;
+
+    &__title{
+        font-size: 42px;
+
+        margin-bottom: 0;
+    }
+
+    &__p{
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+
+    &__desc{
+        font-weight: 500;
+    }
+
+    &__btns{
+        display: flex;
+
+        &_btn1{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            background-color: #E0B973;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+
+            margin-right: 10px;
+
+            font-weight: 900;
+        }
+
+        &_btn2{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+               
+            background-color: #E0B973;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+
+            margin-left: 10px;
+
+            font-weight: 900;
+        }
+    }
+}

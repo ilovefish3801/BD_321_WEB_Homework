@@ -1,0 +1,103 @@
+footer {
+  background-color: #14274A;
+  margin-top: 100px;
+  position: relative;
+}
+
+.footer_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer_desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer_desc__text {
+  font-size: 16px;
+  font-weight: 700;
+  max-width: 200px;
+  max-height: 100px;
+  color: #fff;
+  width: 200px;
+  height: 100px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 6px;
+}
+.footer_desc__text span {
+  font-size: 8px;
+}
+.footer_desc__p {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.footer_nav__ul {
+  list-style: none;
+  color: #fff;
+}
+.footer_nav__ul_li {
+  margin-bottom: 10px;
+}
+.footer_nav__ul_li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.footer_media_links {
+  color: #fff;
+}
+.footer_media_links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+.footer_media_links__facebook {
+  display: flex;
+}
+.footer_media_links__facebook_text {
+  margin-bottom: 10px;
+}
+.footer_media_links__facebook_img {
+  width: 20px;
+  height: 20px;
+  background-image: url("/media/footer/facebook.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.footer_media_links__twitter {
+  display: flex;
+}
+.footer_media_links__twitter_text {
+  margin-bottom: 10px;
+}
+.footer_media_links__twitter_img {
+  width: 20px;
+  height: 20px;
+  background-image: url("/media/footer/twitter.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.footer_media_links__instagram {
+  display: flex;
+}
+.footer_media_links__instagram_img {
+  width: 20px;
+  height: 20px;
+  background-image: url("/media/footer/instagram.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}/*# sourceMappingURL=footer.css.map */
