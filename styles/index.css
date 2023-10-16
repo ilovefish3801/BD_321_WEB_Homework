@@ -3,6 +3,14 @@ body {
   padding: 0;
 }
 
+.garamond {
+  font-family: Adobe Garamond Pro;
+}
+
+.mont {
+  font-family: Montserrat;
+}
+
 header {
   height: 800px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/Hero_Hotel.jpg");
@@ -16,13 +24,13 @@ header {
 }
 
 .headerLogo {
-  font-family: Garamond;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   background-color: #E0B973;
   max-width: 200px;
   max-height: 100px;
+  color: #14274A;
   width: 200px;
   height: 100px;
   border-bottom-left-radius: 30px;
@@ -31,14 +39,15 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  letter-spacing: 6px;
 }
 .headerLogo__span {
   font-size: 12px;
+  letter-spacing: 8px;
 }
 
 .headerNav {
   list-style: none;
-  font-family: Montserrat;
   display: flex;
   align-items: center;
 }
@@ -62,4 +71,27 @@ header {
   color: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-right: 100px;
+}
+.header_text__text_welcome {
+  font-size: 26px;
+  font-weight: 300;
+}
+.header_text__text_luxury {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  max-height: 82px;
+}
+.header_text__text_hotel {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 12px;
+}
+.header_text__text_p {
+  letter-spacing: 2.5px;
+  font-size: 14px;
+  margin: 0;
 }/*# sourceMappingURL=index.css.map */
