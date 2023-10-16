@@ -13,30 +13,79 @@
     <link href="https://fonts.cdnfonts.com/css/adobe-garamond-pro-2" rel="stylesheet">
     
     
-    <link rel="stylesheet" href="styles/index.css">
+    
+    
+    <link rel="stylesheet" href="styles/font_style/font.css">
+    <link rel="stylesheet" href="styles/header_style/index.css">
+    <link rel="stylesheet" href="styles/home_style/home.css">
 </head>
+
 <body>
-    <header>
-        <section class="header_menu">
-            <div class="headerLogo garamond">
-                LUXURY<span class="headerLogo__span">HOTELS</span>
-            </div>
-            <ul class="headerNav mont">
-                <li class="headerNav__li"><a class="headerNav__li_a headerNav__li_a_selected" href="">Home</a></li>
-                <li class="headerNav__li"><a class="headerNav__li_a" href="">Facilities</a></li>
-                <li class="headerNav__li"><a class="headerNav__li_a" href="">Rooms</a></li>
-                <li class="headerNav__li"><a class="headerNav__li_a" href="">Contact-us</a></li>
-            </ul>
-        </section>
-        <section class="header_text">
-            <div class="header_text__text">
-                <div class="header_text__text_welcome mont">WELCOME TO</div>
-                <div class="header_text__text_luxury garamond">LUXURY</div>
-                <div class="header_text__text_hotel garamond">HOTELS</div>
-                <p class="header_text__text_p mont">Book your stay and enjoy Luxury <br>redefined at the most affordable rates.</p>
-            </div>
+    
+    <header style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/home/Hero_Hotel.png');">
+        
+        <section class="header_container">
+            
+            <section class="header_menu">
+                <div class="headerLogo garamond">
+                    LUXURY<span class="headerLogo__span">HOTELS</span>
+                </div>
+                <ul class="headerNav mont">
+                    <li class="headerNav__li"><a class="headerNav__li_a headerNav__li_a_selected" href="">Home</a></li>
+                    <li class="headerNav__li"><a class="headerNav__li_a" href="">Facilities</a></li>
+                    <li class="headerNav__li"><a class="headerNav__li_a" href="">Rooms</a></li>
+                    <li class="headerNav__li"><a class="headerNav__li_a" href="">Contact-us</a></li>
+                </ul>
+            </section>
+            
+            <section class="header_text">
+                <div class="header_text__text">
+                    <div class="header_text__text_welcome mont">WELCOME TO</div>
+                    <div class="header_text__text_luxury garamond">LUXURY</div>
+                    <div class="header_text__text_hotel garamond">HOTELS</div>
+                    <p class="header_text__text_p mont">Book your stay and enjoy Luxury <br>redefined at the most affordable rates.</p>
+                </div>
+            </section>
+            
+            <section class="header_btn_container">
+                <button class="header_btn_container__btn">
+                    <img src="media/header/BookNow.png" alt="" class="header_btn_container__btn_img">
+                    <div class="header_btn_container__btn_text mont" >BOOK NOW</div>
+                </button>
+            </section>
+            
+            <section class="header_scroll_container">
+                    <div class="header_scroll_container__text mont">Scroll</div>
+                    <div class="header_scroll_container__btn">
+                        <img class="header_scroll_container__btn_img" src="media/header/Scroll.png" alt="">
+                    </div>
+            </section>
         </section>
     </header>
+
+    <main>
+        
+        <div class="main_text mont">All our room types are including complementary breakfast</div>
+        
+        <section class="main_container">
+            
+            <section class="main_room1">
+                
+                <hr class="main_room1__line">
+                
+                <section class="main_room1__data">
+                    <h2 class="main_room1__data_text garamond">Luxury redefined</h2>
+                    <p class="main_room1__data_p mont">Our rooms are designed to transport<br> you into an environment made for leisure.<br> Take your mind off the day-to-day of home<br> life and find a private paradise for yourself.</p>
+                    <button class="main_room1__data_btn"><div class="main_room1__data_btn_text mont">EXPLORE</div></button>
+                </section>
+                
+                <div class="main_room1__img">
+                    <img src="media/home/room1.jpg" alt="">
+                </div>
+            
+            </section>
+        </section>
+    </main>
 
 
     <script src="scripts/index.js"></script>
