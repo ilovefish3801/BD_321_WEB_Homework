@@ -23,48 +23,49 @@
 
 <body>
     
-    <header style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/home/Hero_Hotel.png');">
-        
-        <section class="header_container">
+    <header>
+
+        <div class="headerMenu">
+            <div class="headerMenu__logo garamond">
+                LUXURY<span>HOTELS</span>
+            </div>
             
-            <section class="header_menu">
-                <div class="headerLogo garamond">
-                    LUXURY<span class="headerLogo__span">HOTELS</span>
-                </div>
-                <ul class="headerNav mont">
-                    <li class="headerNav__li"><a class="headerNav__li_a headerNav__li_a_selected" href="">Home</a></li>
-                    <li class="headerNav__li"><a class="headerNav__li_a" href="">Facilities</a></li>
-                    <li class="headerNav__li"><a class="headerNav__li_a" href="">Rooms</a></li>
-                    <li class="headerNav__li"><a class="headerNav__li_a" href="">Contact-us</a></li>
-                </ul>
-            </section>
-            
-            <section class="header_text">
-                <div class="header_text__text">
-                    <div class="header_text__text_welcome mont">WELCOME TO</div>
-                    <div class="header_text__text_luxury garamond">LUXURY</div>
-                    <div class="header_text__text_hotel garamond">HOTELS</div>
-                    <p class="header_text__text_p mont">Book your stay and enjoy Luxury <br>redefined at the most affordable rates.</p>
-                </div>
-            </section>
-            
-            <section class="header_btn_container">
-                <button class="header_btn_container__btn">
-                    <img src="media/header/BookNow.png" alt="" class="header_btn_container__btn_img">
-                    <div class="header_btn_container__btn_text mont" >BOOK NOW</div>
-                </button>
-            </section>
-            
-            <section class="header_scroll_container">
-                    <div class="header_scroll_container__text mont">Scroll</div>
-                    <div class="header_scroll_container__btn">
-                        <img class="header_scroll_container__btn_img" src="media/header/Scroll.png" alt="">
-                    </div>
-            </section>
-        </section>
+            <ul class="headerMenu__nav mont">
+                <li class="headerMenu__nav_li"><a class="headerMenu__nav_li_a-selected" href="">Home</a></li>
+                <li class="headerMenu__nav_li"><a class="headerMenu__nav_li_a" href="">Facilities</a></li>
+                <li class="headerMenu__nav_li"><a class="headerMenu__nav_li_a" href="">Rooms</a></li>
+                <li class="headerMenu__nav_li"><a class="headerMenu__nav_li_a" href="">Contact-us</a></li>
+            </ul>
+        </div>
+
     </header>
 
-    <main>
+    <section class="hero">
+        <div class="hero__text">
+            <div class="hero__text_content">
+                <div class="hero__text_content_item hero_text_Welcome mont">WELCOME TO</div>
+                <div class="hero__text_content_item hero_text_Luxury garamond">LUXURY</div>
+                <div class="hero__text_content_item hero_text_Hotel garamond">HOTELS</div>
+                <p class="hero__text_content_item hero_text_Paragraph mont">Book your stay and enjoy Luxury <br>redefined at the most affordable rates.</p>
+            </div>
+        </div>
+    
+        <div class="header_btn_container">
+            <button class="header_btn_container__btn">
+                <img src="media/header/BookNow.png" alt="" class="header_btn_container__btn_img">
+                <div class="header_btn_container__btn_text mont" >BOOK NOW</div>
+            </button>
+        </div>
+        
+        <div class="header_scroll_container">
+                <div class="header_scroll_container__text mont">Scroll</div>
+                <div class="header_scroll_container__btn">
+                    <img class="header_scroll_container__btn_img" src="media/header/Scroll.png" alt="">
+                </div>
+        </div>
+    </section>
+
+    <!-- <main>
         
         <div class="main_text mont">All our room types are including complementary breakfast</div>
         
@@ -118,7 +119,7 @@
 
     <footer>
         <!-- <div class="footer_arrow"></div> -->
-        <section class="footer_container">
+        <!-- <section class="footer_container">
             <section class="footer_desc">
                 <div class="footer_desc__text garamond">
                     LUXURY <span>HOTELS</span>
@@ -151,7 +152,7 @@
                 </section>
             </section>
         </section>
-    </footer>
+    </footer> --> -->
 
 
     <script src="scripts/index.js"></script>

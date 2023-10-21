@@ -3,25 +3,48 @@ body {
   padding: 0;
 }
 
+.hero {
+  background-color: #14274A;
+  position: relative;
+}
+.hero__text_content {
+  color: #fff;
+  margin-top: 100px;
+}
+
+.hero_text_Welcome {
+  font-size: 26px;
+  font-weight: 300;
+}
+.hero_text_Luxury {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  max-height: 82px;
+}
+.hero_text_Hotel {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 12px;
+}
+.hero_text_Paragraph {
+  letter-spacing: 2.5px;
+  font-size: 14px;
+  margin: 0;
+}
+
 header {
-  height: 760px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #14274A;
+}
+header .headerMenu {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
-
-.header_container {
-  width: 1000px;
-}
-
-.header_menu {
-  display: flex;
-  justify-content: space-between;
-}
-
-.headerLogo {
+header .headerMenu__logo {
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -39,55 +62,30 @@ header {
   align-items: center;
   letter-spacing: 6px;
 }
-.headerLogo__span {
+header .headerMenu__logo span {
   font-size: 12px;
   letter-spacing: 8px;
 }
-
-.headerNav {
+header .headerMenu__nav {
   list-style: none;
   display: flex;
   align-items: center;
 }
-.headerNav__li {
+header .headerMenu__nav_li {
   margin-right: 60px;
   display: flex;
 }
-.headerNav__li_a {
+header .headerMenu__nav_li_a {
   text-decoration: none;
   color: #fff;
 }
-.headerNav__li_a_selected {
+header .headerMenu__nav_li_a-selected {
   text-decoration: underline;
   font-weight: 600;
-}
-.headerNav__li_a:hover {
-  text-decoration: underline;
-}
-
-.header_text__text {
   color: #fff;
-  margin-top: 100px;
 }
-.header_text__text_welcome {
-  font-size: 26px;
-  font-weight: 300;
-}
-.header_text__text_luxury {
-  font-size: 80px;
-  font-weight: 700;
-  letter-spacing: 8px;
-  max-height: 82px;
-}
-.header_text__text_hotel {
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 12px;
-}
-.header_text__text_p {
-  letter-spacing: 2.5px;
-  font-size: 14px;
-  margin: 0;
+header .headerMenu__nav_li_a:hover {
+  text-decoration: underline;
 }
 
 .header_btn_container {

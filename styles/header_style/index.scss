@@ -3,106 +3,114 @@ body{
     padding: 0;
 }
 
-header{
-    height: 760px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.hero{
+    background-color: #14274A;
+    position: relative;
+    
+    &__text{
 
-    display: flex;
-    justify-content: center;
-}
-
-.header_container{
-    width: 1000px;
-}
-
-.header_menu{
-    display: flex;
-    justify-content: space-between;
-}
-
-.headerLogo{
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-
-    background-color: #E0B973;
-    max-width: 200px;
-    max-height: 100px;
-
-    color: #14274A;
-
-    width: 200px;
-    height: 100px;
-
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    letter-spacing: 6px;
-
-    &__span{
-        font-size: 12px;
-        letter-spacing: 8px;
-    }
-}
-
-.headerNav{
-    list-style: none;
-
-    display: flex;
-    align-items: center;
-
-    &__li{
-        margin-right: 60px;
-        display: flex;
-
-
-        &_a{
-            text-decoration: none;
+        &_content{
             color: #fff;
 
-            &_selected{
-                text-decoration: underline;
-                font-weight: 600;
-            }
-        }
-        &_a:hover{
-            text-decoration: underline;
-        }
+            margin-top: 100px;
+        
+    }
     }
 }
 
-.header_text__text{
-    color: #fff;
-
-    margin-top: 100px;
-
-    &_welcome{
+.hero_text{
+    &_Welcome{
         font-size: 26px;
         font-weight: 300;
     }
-    &_luxury{
+    &_Luxury{
         font-size: 80px;
         font-weight: 700;
         letter-spacing: 8px;
 
         max-height: 82px;
     }
-    &_hotel{
+    &_Hotel{
         font-size: 32px;
         font-weight: 700;
         letter-spacing: 12px;
     }
-    &_p{
+    &_Paragraph{
         letter-spacing: 2.5px;
         font-size: 14px;
         margin: 0;
+    }
+}
+
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    background-color: #14274A;
+
+    .headerMenu{
+        display: flex;
+        justify-content: space-around;
+    
+        
+        &__logo{
+            font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+    
+        background-color: #E0B973;
+        max-width: 200px;
+        max-height: 100px;
+    
+        color: #14274A;
+    
+        width: 200px;
+        height: 100px;
+    
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        letter-spacing: 6px;
+    
+        span{
+            font-size: 12px;
+            letter-spacing: 8px;
+        }
+        }
+    
+        &__nav{
+            list-style: none;
+    
+        display: flex;
+        align-items: center;
+    
+        &_li{
+            margin-right: 60px;
+            display: flex;
+    
+    
+            &_a{
+                text-decoration: none;
+                color: #fff;
+
+                &-selected{
+                    text-decoration: underline;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+            &_a:hover{
+                text-decoration: underline;
+            }
+        }
+        }
     }
 }
 
