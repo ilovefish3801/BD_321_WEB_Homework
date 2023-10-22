@@ -48,3 +48,19 @@ main{
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    main{
+        .mainContainer__changePage{
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    main{
+        .mainContainer__changePage{
+            font-size: 10px;
+        }
+    }
+}

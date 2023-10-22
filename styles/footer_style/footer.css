@@ -69,4 +69,29 @@ footer .footerContainer__mediaLinks_link_img {
 }
 footer .footerContainer__mediaLinks_link_text {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  footer .footerContainer {
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  footer .footerContainer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  footer .footerContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  footer .footerContainer__mediaLinks_link {
+    margin-top: 10px !important;
+  }
 }/*# sourceMappingURL=footer.css.map */

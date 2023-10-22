@@ -3,6 +3,10 @@ body{
     padding: 0;
 }
 
+body.fixed{
+    overflow-y: hidden;
+}
+
 header{
     height: 760px;
     background-repeat: no-repeat;
@@ -49,23 +53,88 @@ header{
                 }
             }
             &_headerNav{
-                list-style: none;
-
+                
                 display: flex;
                 align-items: center;
 
-                &_li{
-                    margin-right: 60px;
+                &_ul{
+                    list-style: none;
+
                     display: flex;
-                
-                
-                    &_a{
-                        text-decoration: none;
-                        color: #fff;
+                    align-items: center;
+
+                    &_li{
+                        margin-right: 60px;
+                        display: flex;
+                    
+                    
+                        &_a{
+                            text-decoration: none;
+                            color: #fff;
+                        }
+                        &_a:hover{
+                            text-decoration: underline;
+                        }
                     }
-                    &_a:hover{
-                        text-decoration: underline;
-                    }
+                }
+
+                &_burger{
+                    height: 32px;
+                    width: 42px;
+                    position: relative;
+                
+                    cursor: pointer;
+                
+                    margin-right: 4px;
+
+                    display: none;
+                }
+                
+                &_burger :first-child{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    background-color: #fff;
+                    transition: 0.5s;
+                }
+
+                &_burger :nth-child(2){
+    position: absolute;
+    top: calc(30px/2 - 2px/2);
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition: 0.5s;
+                }
+                
+                &_burger :last-child{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition: 0.5s;
+                }
+                
+                &_burger.active :first-child{
+    transform: rotate(45deg);
+    top: calc(50% - 2px);
+    transition: 0.5s;
+                }
+
+                &_burger.active :nth-child(2){
+    display: none;
+    transition: 0.5s;
+                }
+
+                &_burger.active :last-child{
+    transform: rotate(-45deg);
+    bottom: calc(50% - 1px);
+    transition: 0.5s;
                 }
             }
         }
@@ -173,6 +242,51 @@ header{
             letter-spacing: 2.5px;
             font-size: 14px;
             margin: 0;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    header{
+        .headerContainer{
+        width: 500px;
+    }
+        .headerContainer__headerMenu_headerNav_ul{
+        display: none;
+    }
+        .headerContainer__headerMenu_headerNav_burger{
+        display: block;
+    }
+        .headerContainer__headerText{
+        display: flex;
+        justify-content: center;
+    }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header{
+        .headerContainer{
+            .headerContainer__headerText{
+                .headerContainer__headerText_content{
+                    .hero_text_Welcome{
+                        font-size: 16px;
+                    }
+
+                    .hero_text_Luxury{
+                        font-size: 52px;
+                    }
+
+                    .hero_text_Hotel{
+                        font-size: 30px;
+                    }
+
+                    .hero_text_Paragraph{
+                        font-size: 12px;
+                    }
+                }
+            }
         }
     }
 }

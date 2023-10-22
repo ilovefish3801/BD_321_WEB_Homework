@@ -70,4 +70,45 @@ main .mainContainer__rooms > div:nth-child(2) .mainContainer__rooms_room_data {
 main .mainContainer__rooms > div:nth-child(2) .mainContainer__rooms_room_data_content {
   margin-left: 0;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  main .mainContainer .mainContainer__rooms .mainContainer__rooms_room {
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .mainContainer .mainContainer__rooms .mainContainer__rooms_room .mainContainer__rooms_room_data {
+    margin-bottom: 22px;
+  }
+  main .mainContainer .mainContainer__rooms .mainContainer__rooms_room .mainContainer__rooms_room_data hr {
+    display: none;
+  }
+  main .mainContainer .mainContainer__rooms .mainContainer__rooms_room .mainContainer__rooms_room_data .mainContainer__rooms_room_data_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  main .mainContainer img {
+    max-width: 280px;
+    max-height: 280px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .mainTitle {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .mainTitle {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 370px) {
+  main .mainTitle {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=home.css.map */

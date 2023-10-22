@@ -111,3 +111,68 @@ main{
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    main{
+        .mainContainer{
+            .mainContainer__rooms{
+
+                .mainContainer__rooms_room{
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .mainContainer__rooms_room_data{
+                        margin-bottom: 22px;
+                        hr{
+                            display: none;
+                        }
+
+                        .mainContainer__rooms_room_data_content{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        .mainContainer{
+            img{
+                max-width: 280px;
+                max-height: 280px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        .mainTitle{
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        .mainTitle{
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    main{
+        .mainTitle{
+            font-size: 10px;
+        }
+    }
+}

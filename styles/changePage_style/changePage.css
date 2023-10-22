@@ -32,4 +32,15 @@ main .mainContainer__changePage_btns_btn {
   cursor: pointer;
   margin-right: 10px;
   font-weight: 900;
+}
+
+@media screen and (max-width: 500px) {
+  main .mainContainer__changePage {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 370px) {
+  main .mainContainer__changePage {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=changePage.css.map */
