@@ -1,22 +1,19 @@
 footer {
   background-color: #14274A;
   margin-top: 100px;
-  position: relative;
 }
-
-.footer_container {
+footer .footerContainer {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
-.footer_desc {
+footer .footerContainer__footerContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.footer_desc__text {
+footer .footerContainer__footerContent_text {
   font-size: 16px;
   font-weight: 700;
   max-width: 200px;
@@ -32,72 +29,44 @@ footer {
   align-items: center;
   letter-spacing: 6px;
 }
-.footer_desc__text span {
+footer .footerContainer__footerContent_text span {
   font-size: 8px;
 }
-.footer_desc__p {
+footer .footerContainer__footerContent_paragraph {
   color: #fff;
   font-size: 12px;
   margin-top: 0;
 }
-
-.footer_nav__ul {
+footer .footerContainer__footerNav_ul {
   list-style: none;
   color: #fff;
 }
-.footer_nav__ul_li {
+footer .footerContainer__footerNav_ul_li {
   margin-bottom: 10px;
 }
-.footer_nav__ul_li a {
+footer .footerContainer__footerNav_ul_li a {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
 }
-
-.footer_media_links {
+footer .footerContainer__mediaLinks {
   color: #fff;
 }
-.footer_media_links a {
+footer .footerContainer__mediaLinks a {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
 }
-.footer_media_links__facebook {
+footer .footerContainer__mediaLinks_link {
   display: flex;
 }
-.footer_media_links__facebook_text {
+footer .footerContainer__mediaLinks_link_img {
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+footer .footerContainer__mediaLinks_link_text {
   margin-bottom: 10px;
-}
-.footer_media_links__facebook_img {
-  width: 20px;
-  height: 20px;
-  background-image: url("/media/footer/facebook.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 10px;
-}
-.footer_media_links__twitter {
-  display: flex;
-}
-.footer_media_links__twitter_text {
-  margin-bottom: 10px;
-}
-.footer_media_links__twitter_img {
-  width: 20px;
-  height: 20px;
-  background-image: url("/media/footer/twitter.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 10px;
-}
-.footer_media_links__instagram {
-  display: flex;
-}
-.footer_media_links__instagram_img {
-  width: 20px;
-  height: 20px;
-  background-image: url("/media/footer/instagram.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 10px;
 }/*# sourceMappingURL=footer.css.map */

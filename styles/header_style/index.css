@@ -3,48 +3,22 @@ body {
   padding: 0;
 }
 
-.hero {
-  background-color: #14274A;
-  position: relative;
-}
-.hero__text_content {
-  color: #fff;
-  margin-top: 100px;
-}
-
-.hero_text_Welcome {
-  font-size: 26px;
-  font-weight: 300;
-}
-.hero_text_Luxury {
-  font-size: 80px;
-  font-weight: 700;
-  letter-spacing: 8px;
-  max-height: 82px;
-}
-.hero_text_Hotel {
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 12px;
-}
-.hero_text_Paragraph {
-  letter-spacing: 2.5px;
-  font-size: 14px;
-  margin: 0;
-}
-
 header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: #14274A;
-}
-header .headerMenu {
+  height: 760px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
-header .headerMenu__logo {
+header .headerContainer {
+  width: 1000px;
+}
+header .headerContainer__headerMenu {
+  display: flex;
+  justify-content: space-between;
+}
+header .headerContainer__headerMenu_headerLogo {
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -62,39 +36,37 @@ header .headerMenu__logo {
   align-items: center;
   letter-spacing: 6px;
 }
-header .headerMenu__logo span {
+header .headerContainer__headerMenu_headerLogo span {
   font-size: 12px;
   letter-spacing: 8px;
 }
-header .headerMenu__nav {
+header .headerContainer__headerMenu_headerNav {
   list-style: none;
   display: flex;
   align-items: center;
 }
-header .headerMenu__nav_li {
+header .headerContainer__headerMenu_headerNav_li {
   margin-right: 60px;
   display: flex;
 }
-header .headerMenu__nav_li_a {
+header .headerContainer__headerMenu_headerNav_li_a {
   text-decoration: none;
   color: #fff;
 }
-header .headerMenu__nav_li_a-selected {
+header .headerContainer__headerMenu_headerNav_li_a:hover {
   text-decoration: underline;
-  font-weight: 600;
+}
+header .headerContainer__headerText_content {
   color: #fff;
+  margin-top: 100px;
 }
-header .headerMenu__nav_li_a:hover {
-  text-decoration: underline;
-}
-
-.header_btn_container {
+header .headerContainer__bookNow {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 140px;
 }
-.header_btn_container__btn {
+header .headerContainer__bookNow_btn {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -106,25 +78,24 @@ header .headerMenu__nav_li_a:hover {
   width: 180px;
   cursor: pointer;
 }
-.header_btn_container__btn_text {
+header .headerContainer__bookNow_btn_text {
   font-size: 18px;
   font-weight: 600;
 }
-.header_btn_container__btn_img {
+header .headerContainer__bookNow_btn_img {
   max-width: 24px;
   max-height: 18px;
 }
-.header_btn_container__btn:hover {
+header .headerContainer__bookNow_btn:hover {
   background-color: #c79841;
 }
-
-.header_scroll_container {
+header .headerContainer__scrollDown {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-top: 60px;
 }
-.header_scroll_container__text {
+header .headerContainer__scrollDown_text {
   color: #fff;
   display: flex;
   justify-content: center;
@@ -132,14 +103,38 @@ header .headerMenu__nav_li_a:hover {
   font-size: 22px;
   font-weight: 600;
 }
-.header_scroll_container__btn {
+header .headerContainer__scrollDown_btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 12px;
 }
-.header_scroll_container__btn_img {
+header .headerContainer__scrollDown_btn_img {
   max-width: 44px;
   max-height: 44px;
   cursor: pointer;
+}
+header .selectedBTN {
+  text-decoration: underline;
+  font-weight: 600;
+}
+header .hero_text_Welcome {
+  font-size: 26px;
+  font-weight: 300;
+}
+header .hero_text_Luxury {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  max-height: 82px;
+}
+header .hero_text_Hotel {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 12px;
+}
+header .hero_text_Paragraph {
+  letter-spacing: 2.5px;
+  font-size: 14px;
+  margin: 0;
 }/*# sourceMappingURL=index.css.map */

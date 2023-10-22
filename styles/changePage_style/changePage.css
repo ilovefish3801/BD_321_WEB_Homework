@@ -1,0 +1,35 @@
+main .mainContainer__changePage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+main .mainContainer__changePage_title {
+  font-size: 42px;
+  margin-bottom: 0;
+}
+main .mainContainer__changePage_paragraph {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+main .mainContainer__changePage_desc {
+  font-weight: 500;
+}
+main .mainContainer__changePage_btns {
+  display: flex;
+}
+main .mainContainer__changePage_btns_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #E0B973;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 900;
+}/*# sourceMappingURL=changePage.css.map */

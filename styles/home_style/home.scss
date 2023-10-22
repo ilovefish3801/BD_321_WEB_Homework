@@ -1,222 +1,113 @@
-.main_text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main{
 
-    margin-top: 60px;
-
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.main_room1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    margin-top: 100px;
-    
-    &__data{
-
+    .mainTitle{
         display: flex;
+        justify-content: center;
+        align-items: center;
 
-        &__line{
-            border:         none;
-            border-left:    2px solid hsla(200, 10%, 50%,100);
-            
-            height:         240px;
-            width:          1px; 
-            
-            margin: 0;
-        }
+        margin-top: 60px;
 
-        &_container{
-            margin-left: 20px;
-            &_text{
-                font-size: 32px;
-    
-                margin-top: 0;
-            }
-            
-            
-            
-            &_p{
-                font-weight: 500;
-                font-size: 14px;
-    
-                line-height: 24px;
-            }
-    
-            &_btn{
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                
-                background-color: #E0B973;
-                color: #fff;
-    
-                border: none;
-                border-radius: 8px;
-    
-                width: 140px;
-                height: 36px;
-    
-                cursor: pointer;
-    
-                &_text{
-                    font-size: 14px;
-                    font-weight: 600;
-                }
-            }
-    
-            &_btn:hover{
-                background-color: #c79841;
-            }
-        }
-    }
-    &__img{
-       
-       img{
-           max-width: 440px;
-           max-height: 440px;
-       }
-    }
-}
-
-.main_room2{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    margin-top: 100px;
-    
-    &__data{
-
-        display: flex;
-
-        &__line{
-            border:         none;
-            border-left:    2px solid hsla(200, 10%, 50%,100);
-            
-            height:         240px;
-            width:          1px; 
-            
-            margin: 0;
-        }
-
-        &_container{
-            margin-left: 20px;
-            &_text{
-                font-size: 32px;
-    
-                margin-top: 0;
-            }
-            
-            
-            
-            &_p{
-                font-weight: 500;
-                font-size: 14px;
-    
-                line-height: 24px;
-            }
-    
-            &_btn{
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                
-                background-color: #E0B973;
-                color: #fff;
-    
-                border: none;
-                border-radius: 8px;
-    
-                width: 140px;
-                height: 36px;
-    
-                cursor: pointer;
-    
-                &_text{
-                    font-size: 14px;
-                    font-weight: 600;
-                }
-            }
-    
-            &_btn:hover{
-                background-color: #c79841;
-            }
-        }
-    }
-    &__img{
-       
-       img{
-           max-width: 440px;
-           max-height: 440px;
-       }
-    }
-}
-
-.main_change_page{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    margin-top: 80px;
-
-    &__title{
-        font-size: 42px;
-
-        margin-bottom: 0;
-    }
-
-    &__p{
-        margin-bottom: 0;
-        font-weight: 600;
-    }
-
-    &__desc{
+        font-size: 20px;
         font-weight: 500;
     }
 
-    &__btns{
-        display: flex;
+    .mainContainer{
 
-        &_btn1{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+        &__rooms{
+
+            &_room{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                margin-top: 100px;
+
+                &_data{
+
+                    display: flex;
+
+                    position: relative;
             
-            background-color: #E0B973;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            width: 36px;
-            height: 36px;
-            cursor: pointer;
+                    &_line{
+                        border:         none;
+                        border-left:    2px solid hsla(200, 10%, 50%,100);
+                        
+                        position: absolute;
 
-            margin-right: 10px;
+                        min-height: 104%;
+                        max-height: 104%;
 
-            font-weight: 900;
+                        height:         100%;
+                        width:          1px; 
+                        
+                        margin: 0;
+                    }
+            
+                    &_content{
+                        margin-left: 20px;
+                        &_text{
+                            font-size: 32px;
+                
+                            margin-top: 0;
+                        }
+                        
+                        
+                        
+                        &_paragraph{
+                            font-weight: 500;
+                            font-size: 14px;
+                
+                            line-height: 24px;
+                        }
+                
+                        &_btn{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            
+                            background-color: #E0B973;
+                            color: #fff;
+                
+                            border: none;
+                            border-radius: 8px;
+                
+                            width: 140px;
+                            height: 36px;
+                
+                            cursor: pointer;
+                
+                            &_text{
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                        }
+                
+                        &_btn:hover{
+                            background-color: #c79841;
+                        }
+                    }
+                }
+                &_img{
+       
+                    img{
+                        max-width: 440px;
+                        max-height: 440px;
+                    }
+                 }
+            }
         }
+        
+        &__rooms>div:nth-child(2){
+            flex-direction: row-reverse;
 
-        &_btn2{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-               
-            background-color: #E0B973;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            width: 36px;
-            height: 36px;
-            cursor: pointer;
+            .mainContainer__rooms_room_data{
+                flex-direction: row-reverse;
+            }
 
-            margin-left: 10px;
-
-            font-weight: 900;
+            .mainContainer__rooms_room_data_content{
+                margin-left: 0;
+                margin-right: 20px;
+            }
         }
     }
 }
