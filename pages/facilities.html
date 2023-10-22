@@ -17,14 +17,14 @@
     
     <link rel="stylesheet" href="/styles/font_style/font.css">
     <link rel="stylesheet" href="/styles/header_style/index.css">
-    <link rel="stylesheet" href="/styles/home_style/home.css">
     <link rel="stylesheet" href="/styles/changePage_style/changePage.css">
+    <link rel="stylesheet" href="/styles/facilities_style/facilities.css">
     <link rel="stylesheet" href="/styles/footer_style/footer.css">
 </head>
 
 <body class="body">
     
-    <header style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/home/Hero_Hotel.png');">
+    <header style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/media/facilities/Hero_Hotel.jpg');">
         
         <div class="headerContainer">
             
@@ -81,7 +81,45 @@
     
     
     <main>
+        <div class="mainTitle garamond">FACILITIES</div>
+        <p class="mainDesc mont">We want your stay at our lush hotel to be truly unforgettable. That is why we give special attention to all of your needs so<br><span> that we can ensure an experience quite uniquw. Luxury hotels offers the perfect setting with stunning views for leisure</span><span>and our modern luxury resort facilities will help you enjoy the best of all.</span></p>
+
+        <div class="mainContainer">
             
+            <div class="mainContainer__content">
+                
+                <div class="mainContainer__content_thumbnail">
+                    <img src="/media/facilities/gym.jpg" alt="" class="mainContainer__content_thumbnail_img">
+                    <div class="mainContainer__content_thumbnail_text">THE GYM</div>
+                </div>
+                
+                <div class="mainContainer__content_thumbnail">
+                    <img src="/media/facilities/bar.png" alt="" class="mainContainer__content_thumbnail_img">
+                    <div class="mainContainer__content_thumbnail_text">POOLSIDE BAR</div>
+                </div>
+                
+                <div class="mainContainer__content_thumbnail">
+                    <img src="/media/facilities/spa.jpg" alt="" class="mainContainer__content_thumbnail_img">
+                    <div class="mainContainer__content_thumbnail_text">THE SPA</div>
+                </div>
+                
+                <div class="mainContainer__content_thumbnail">
+                    <img src="/media/facilities/pool.jpg" alt="" class="mainContainer__content_thumbnail_img">
+                    <div class="mainContainer__content_thumbnail_text">SWIMMING POOL</div>
+                </div>
+                
+                <div class="mainContainer__content_thumbnail">
+                    <img src="/media/facilities/restaurant.jpg" alt="" class="mainContainer__content_thumbnail_img">
+                    <div class="mainContainer__content_thumbnail_text">RESTAURANT</div>
+                </div>
+                
+                <div class="mainContainer__content_thumbnail">
+                    <img src="/media/facilities/laundry.jpg" alt="" class="mainContainer__content_thumbnail_img">
+                    <div class="mainContainer__content_thumbnail_text">LAUNDRY</div>
+                </div>   
+            </div>
+
+
             <div class="mainContainer__changePage">
                 <h2 class="mainContainer__changePage_title garamond">Testimonials</h2>
                 <p class="mainContainer__changePage_paragraph mont">"Calm, Serene, Retro – What a way to relax and enjoy"</p>
@@ -91,8 +129,8 @@
                     <button class="mainContainer__changePage_btns_btn"><div class="mainContainer__changePage_btns_btn_text">➡</div></button>
                 </div>
             </div>
+        </div>
         
-    
     </main>
 
 
@@ -143,6 +181,6 @@
     </footer>
 
 
-    <script src="scripts/index.js"></script>
+    <script src="/scripts/index.js"></script>
 </body>
 </html>

@@ -8,3 +8,11 @@ BURGER_BTN.addEventListener("click", ()=>{
     const BODY = document.querySelector(".body")
     BODY.classList.toggle('fixed')
 })
+
+
+const SCROLL_BTN = document.querySelector('.headerContainer__scrollDown_btn_img')
+const FOOTER = document.querySelector('footer')
+
+SCROLL_BTN.addEventListener('click', ()=>{
+    FOOTER.scrollIntoView({behavior: 'smooth'})
+})
