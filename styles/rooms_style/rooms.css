@@ -142,4 +142,60 @@ main .mainContainer__rooms .slider .slick-dots button {
   background-color: transparent;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .mainDesc {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 720px) {
+  main .mainDesc {
+    font-size: 8px;
+  }
+  main .mainContainer__rooms_room {
+    width: 400px;
+    height: 380px;
+  }
+  main .mainContainer__rooms_room_sliderHolder_slider_photo img {
+    max-width: 400px;
+    max-height: 300px;
+  }
+  main .mainContainer__rooms_room_sliderHolder_title {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .mainDesc {
+    font-size: 6px;
+  }
+  main .mainContainer__rooms_room {
+    width: 300px;
+    height: 280px;
+  }
+  main .mainContainer__rooms_room_sliderHolder_slider_photo img {
+    max-width: 300px;
+    max-height: 200px;
+  }
+  main .mainContainer__rooms_room_sliderHolder_title {
+    width: 300px;
+    font-size: 16px;
+  }
+  main .mainContainer__rooms_room_expandedDetails {
+    margin: 0;
+  }
+  main .mainContainer__rooms_room_content_details_btn {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    margin-right: 4px;
+  }
+  main .slider .slick-dots {
+    bottom: 10px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .mainDesc {
+    font-size: 5px;
+  }
 }/*# sourceMappingURL=rooms.css.map */

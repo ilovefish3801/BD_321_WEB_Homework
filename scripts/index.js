@@ -1,3 +1,4 @@
+
 // start point
 document.addEventListener('DOMContentLoaded', ()=>{
     // burger open/close
@@ -32,22 +33,50 @@ document.addEventListener('DOMContentLoaded', ()=>{
         verticalSwiping: true,
     });
 
+
+    // expand room details
+
+    // expand buttons
     const EXPAND_BTNS = document.querySelectorAll('.mainContainer__rooms_room_content_details_btn')
 
     EXPAND_BTNS.forEach((btn, index) => {
+        //get button index and its element on click
         btn.addEventListener('click', () => {
             
+            // get btn desc with the same index
             const DESC = document.querySelectorAll('.mainContainer__rooms_room_expandedDetails')[index]
+            // get btn room with the same index
             const ROOM = document.querySelectorAll('.mainContainer__rooms_room')[index]
             
+            // check if desc is displayed or hidden then check for window width
             if (DESC.style.display === 'none' || DESC.style.display === '') {
-                DESC.style.display = 'block'
-                ROOM.style.height = '600px'
-                btn.innerHTML = '⬆'
+                if(720 <= window.innerWidth){
+                    DESC.style.display = 'block'
+                    ROOM.style.height = '600px'
+                    btn.innerHTML = '⬆'
+                }else if(window.innerWidth <= 500){
+                    DESC.style.display = 'block'
+                    ROOM.style.height = '340px'
+                    btn.innerHTML = '⬆'
+                }else{
+                    DESC.style.display = 'block'
+                    ROOM.style.height = '440px'
+                    btn.innerHTML = '⬆'
+                }
             } else {
-                DESC.style.display = 'none'
-                ROOM.style.height = '500px'
-                btn.innerHTML = '⬇'
+                if(720 <= window.innerWidth){
+                    DESC.style.display = 'none'
+                    ROOM.style.height = '500px'
+                    btn.innerHTML = '⬇'
+                }else if(window.innerWidth <= 500){
+                    DESC.style.display = 'none'
+                    ROOM.style.height = '280px'
+                    btn.innerHTML = '⬇'
+                }else{
+                    DESC.style.display = 'none'
+                    ROOM.style.height = '380px'
+                    btn.innerHTML = '⬇'
+                }
             }
         })
     })
