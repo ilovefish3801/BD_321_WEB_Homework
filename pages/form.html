@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luxury Hotels | Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Raleway:wght@100;300;400;500;600;700&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -49,6 +49,17 @@
         </div>
     </header>
 
+    <section class="mobileContainer">
+        <nav class="mobileContainer__mobileNav">
+            <ul class="mobileContainer_mobileNav_ul mont">
+                <li class="mobileContainer_mobileNav_ul_li"><a class="mobileContainer_mobileNav_ul_li_a" href="/index.html">Home</a></li>
+                <li class="mobileContainer_mobileNav_ul_li"><a class="mobileContainer_mobileNav_ul_li_a" href="facilities.html">Facilities</a></li>
+                <li class="mobileContainer_mobileNav_ul_li"><a class="mobileContainer_mobileNav_ul_li_a" href="rooms.html">Rooms</a></li>
+                <li class="mobileContainer_mobileNav_ul_li"><a class="mobileContainer_mobileNav_ul_li_a selectedBTN" href="#">Contact-us</a></li>
+            </ul>
+        </nav>
+    </section>
+
     <section class="hero" style="background-color: #14274A;">
         <div class="hero__title mont">CONTACT-US</div>
     </section>
@@ -64,7 +75,7 @@
             <div class="mainContainer__info">
                 <div class="mainContainer__info_adress mont">497 Evergreen Rd. Roseville,<br> CA 95673</div>
 
-                <button class="mainContainer__info_location mont">View map <span>➡</span></button>
+                <button onclick="window.location.href = 'https://www.google.com/maps/place/Atlantis+The+Palm/@25.1304426,55.1145749,17z/data=!3m1!4b1!4m10!3m9!1s0x3e5f153e3609c979:0x5945a418a804ac5!5m3!1s2023-10-23!4m1!1i2!8m2!3d25.1304426!4d55.1171498!16s%2Fm%2F02r9h0j?hl=uk&entry=ttu' " class="mainContainer__info_location mont">View map <span>➡</span></button>
 
                 <div class="mainContainer__info_phoneNumber mont">Phone: +44 345 678 903</div>
                 <div class="mainContainer__info_email mont">Email: luxury_hotels@gmail.com</div>
@@ -73,10 +84,10 @@
             <form id="mainContainer__form">
 
                 <label for="mainContainer__form_inputName">Name</label>
-                <input type="text" id="mainContainer__form_inputName">
+                <input required type="text" id="mainContainer__form_inputName">
                 
                 <label for="mainContainer__form_inputEmail">Email Address</label>
-                <input type="email" id="mainContainer__form_inputEmail">
+                <input required type="email" id="mainContainer__form_inputEmail">
 
                 <label for="mainContainer__form_textArea">Message</label>
                 <textarea id="mainContainer__form_textArea" cols="30" rows="8"></textarea>
@@ -136,6 +147,8 @@
         </div>
     </footer>
 
+
+    <script src="/scripts/formValidation.js"></script>
     <script src="/scripts/index.js"></script>
 </body>
 </html>

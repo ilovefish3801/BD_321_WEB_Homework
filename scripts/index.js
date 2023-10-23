@@ -6,11 +6,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
     BURGER_BTN.addEventListener("click", ()=>{
     BURGER_BTN.classList.toggle('active')
     
-    const MOB_MENU = document.querySelector(".headerContainer__headerMenu_mobileNav")
+    const MOB_MENU = document.querySelector(".mobileContainer")
     MOB_MENU.classList.toggle('active')
 
     const BODY = document.querySelector(".body")
     BODY.classList.toggle('fixed')
+    
+    const HEADER_CONTAINER = document.querySelector('.headerContainer__headerMenu')
+    HEADER_CONTAINER.classList.toggle('active')
+
+    })
 })
 
 
@@ -80,4 +85,3 @@ document.addEventListener('DOMContentLoaded', ()=>{
             }
         })
     })
-})
