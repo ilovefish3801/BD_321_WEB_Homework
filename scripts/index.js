@@ -1,5 +1,8 @@
-const BURGER_BTN = document.querySelector(".headerContainer__headerMenu_headerNav_burger")
-BURGER_BTN.addEventListener("click", ()=>{
+// start point
+document.addEventListener('DOMContentLoaded', ()=>{
+    // burger open/close
+    const BURGER_BTN = document.querySelector(".headerContainer__headerMenu_headerNav_burger")
+    BURGER_BTN.addEventListener("click", ()=>{
     BURGER_BTN.classList.toggle('active')
     
     // const MOB_MENU = document.querySelector(".mobile_menu")
@@ -10,9 +13,42 @@ BURGER_BTN.addEventListener("click", ()=>{
 })
 
 
-const SCROLL_BTN = document.querySelector('.headerContainer__scrollDown_btn_img')
-const FOOTER = document.querySelector('footer')
+    // scroll to footer
+    const SCROLL_BTN = document.querySelector('.headerContainer__scrollDown_btn_img')
+    const FOOTER = document.querySelector('footer')
 
-SCROLL_BTN.addEventListener('click', ()=>{
-    FOOTER.scrollIntoView({behavior: 'smooth'})
+    SCROLL_BTN.addEventListener('click', ()=>{
+        FOOTER.scrollIntoView({behavior: 'smooth'})
+    })
+
+    // slider
+    $('.single-item').slick({
+        inifinte: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        vertical: true,
+        verticalSwiping: true,
+    });
+
+    const EXPAND_BTNS = document.querySelectorAll('.mainContainer__rooms_room_content_details_btn')
+
+    EXPAND_BTNS.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            
+            const DESC = document.querySelectorAll('.mainContainer__rooms_room_expandedDetails')[index]
+            const ROOM = document.querySelectorAll('.mainContainer__rooms_room')[index]
+            
+            if (DESC.style.display === 'none' || DESC.style.display === '') {
+                DESC.style.display = 'block'
+                ROOM.style.height = '600px'
+                btn.innerHTML = '⬆'
+            } else {
+                DESC.style.display = 'none'
+                ROOM.style.height = '500px'
+                btn.innerHTML = '⬇'
+            }
+        })
+    })
 })
