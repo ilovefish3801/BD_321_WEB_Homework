@@ -15,6 +15,7 @@
     
     
     
+    <link rel="stylesheet" href="styles/header_style/headerMenu.css">
     <link rel="stylesheet" href="styles/font_style/font.css">
     <link rel="stylesheet" href="styles/header_style/index.css">
     <link rel="stylesheet" href="styles/home_style/home.css">
@@ -36,10 +37,10 @@
                 <nav class="headerContainer__headerMenu_headerNav">
                     
                     <ul class="headerContainer__headerMenu_headerNav_ul mont">
-                        <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a selectedBTN" href="">Home</a></li>
+                        <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a selectedBTN" href="#">Home</a></li>
                         <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a" href="pages/facilities.html">Facilities</a></li>
                         <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a" href="pages/rooms.html">Rooms</a></li>
-                        <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a" href="">Contact-us</a></li>
+                        <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a" href="pages/form.html">Contact-us</a></li>
                     </ul>
     
                     <div class="headerContainer__headerMenu_headerNav_burger">
@@ -47,6 +48,15 @@
                         <div></div>
                         <div></div>
                     </div>
+                </nav>
+
+                <nav class="headerContainer__headerMenu_mobileNav">
+                    <ul class="headerContainer__headerMenu_mobileNav_ul mont">
+                        <li class="headerContainer__headerMenu_mobileNav_ul_li"><a class="headerContainer__headerMenu_mobileNav_ul_li_a selectedBTN" href="#">Home</a></li>
+                        <li class="headerContainer__headerMenu_mobileNav_ul_li"><a class="headerContainer__headerMenu_mobileNav_ul_li_a" href="pages/facilities.html">Facilities</a></li>
+                        <li class="headerContainer__headerMenu_mobileNav_ul_li"><a class="headerContainer__headerMenu_mobileNav_ul_li_a" href="pages/rooms.html">Rooms</a></li>
+                        <li class="headerContainer__headerMenu_mobileNav_ul_li"><a class="headerContainer__headerMenu_mobileNav_ul_li_a" href="pages/form.html">Contact-us</a></li>
+                    </ul>
                 </nav>
 
             </div>
@@ -61,7 +71,7 @@
             </div>
             
             <div class="headerContainer__bookNow">
-                <button class="headerContainer__bookNow_btn">
+                <button onclick="window.location.href = 'pages/rooms.html' " class="headerContainer__bookNow_btn">
                     <img src="media/header/BookNow.png" alt="" class="headerContainer__bookNow_btn_img">
                     <div class="headerContainer__bookNow_btn_text mont" >BOOK NOW</div>
                 </button>
@@ -94,7 +104,7 @@
                         <div class="mainContainer__rooms_room_data_content">
                             <h2 class="mainContainer__rooms_room_data_content_text garamond">Luxury redefined</h2>
                             <p class="mainContainer__rooms_room_data_content_paragraph mont">Our rooms are designed to transport<br> you into an environment made for leisure.<br> Take your mind off the day-to-day of home<br> life and find a private paradise for yourself.</p>
-                            <button class="mainContainer__rooms_room_data_content_btn"><div class="mainContainer__rooms_room_data_content_btn_text mont">EXPLORE</div></button>
+                            <button onclick="window.location.href = 'pages/facilities.html' " class="mainContainer__rooms_room_data_content_btn"><div class="mainContainer__rooms_room_data_content_btn_text mont">EXPLORE</div></button>
                         </div>
                     </div>
                     
@@ -111,7 +121,7 @@
                         <div class="mainContainer__rooms_room_data_content">
                             <h2 class="mainContainer__rooms_room_data_content_text garamond">Leave your worries in<br> the sand</h2>
                             <p class="mainContainer__rooms_room_data_content_paragraph mont">We love life at the beach.<br> Being close to the ocean with access<br> to endless sandy beach ensures a<br> relaxed state of mind. It seems like time<br> stands still watching the ocean.</p>
-                            <div class="mainContainer__rooms_room_data_content_btn"><div class="mainContainer__rooms_room_data_content_btn_text mont">EXPLORE</div></button>
+                            <div onclick="window.location.href = 'pages/facilities.html' " class="mainContainer__rooms_room_data_content_btn"><div class="mainContainer__rooms_room_data_content_btn_text mont">EXPLORE</div></button>
                             </div>
                         </div>
                     </div>
@@ -130,8 +140,8 @@
                 <p class="mainContainer__changePage_paragraph mont">"Calm, Serene, Retro – What a way to relax and enjoy"</p>
                 <p class="mainContainer__changePage_desc mont">Mr. and Mrs. Baxter, UK</p>
                 <div class="mainContainer__changePage_btns">
-                    <button class="mainContainer__changePage_btns_btn"><div class="mainContainer__changePage_btns_btn_text">⬅</div></button>
-                    <button class="mainContainer__changePage_btns_btn"><div class="mainContainer__changePage_btns_btn_text">➡</div></button>
+                    <button onclick="window.location.href = 'pages/form.html' " class="mainContainer__changePage_btns_btn"><div class="mainContainer__changePage_btns_btn_text">⬅</div></button>
+                    <button onclick="window.location.href = 'pages/facilities.html' " class="mainContainer__changePage_btns_btn"><div class="mainContainer__changePage_btns_btn_text">➡</div></button>
                 </div>
             </div>
         
@@ -162,22 +172,22 @@
             <div class="footerContainer__mediaLinks mont">
                 <div class="footerContainer__mediaLinks_link">
                     
-                    <div class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/facebook.png')"></div>
-                    <div class="footerContainer__mediaLinks_link_text"><a href="">Facebook</a></div>
+                    <div onclick="window.location.href = 'https://facebook.com' "  class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/facebook.png')"></div>
+                    <div class="footerContainer__mediaLinks_link_text"><a href="https://facebook.com">Facebook</a></div>
 
                 </div>
                 
                 <div class="footerContainer__mediaLinks_link">
                     
-                    <div class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/twitter.png')"></div>
-                    <div class="footerContainer__mediaLinks_link_text"><a href="">Twitter</a></div>
+                    <div onclick="window.location.href = 'https://twitter.com' " class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/twitter.png')"></div>
+                    <div class="footerContainer__mediaLinks_link_text"><a href="https://twitter.com">Twitter</a></div>
 
                 </div>
                 
                 <div class="footerContainer__mediaLinks_link">
                     
-                    <div class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/instagram.png')"></div>
-                    <div class="footerContainer__mediaLinks_link_text"><a href="">Instagram</a></div>
+                    <div onclick="window.location.href = 'https://instagram.com' " class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/instagram.png')"></div>
+                    <div class="footerContainer__mediaLinks_link_text"><a href="https://instagram.com">Instagram</a></div>
 
                 </div>
             </div>

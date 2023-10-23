@@ -33,6 +33,9 @@ main .mainContainer__changePage_btns_btn {
   margin-right: 10px;
   font-weight: 900;
 }
+main .mainContainer__changePage_btns_btn:hover {
+  background-color: #c79841;
+}
 
 @media screen and (max-width: 500px) {
   main .mainContainer__changePage {

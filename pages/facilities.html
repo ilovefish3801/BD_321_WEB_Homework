@@ -14,7 +14,7 @@
     
     
     
-    
+    <link rel="stylesheet" href="/styles/header_style/headerMenu.css">
     <link rel="stylesheet" href="/styles/font_style/font.css">
     <link rel="stylesheet" href="/styles/header_style/index.css">
     <link rel="stylesheet" href="/styles/changePage_style/changePage.css">
@@ -39,7 +39,7 @@
                         <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a" href="/index.html">Home</a></li>
                         <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a selectedBTN" href="#">Facilities</a></li>
                         <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a" href="rooms.html">Rooms</a></li>
-                        <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a" href="">Contact-us</a></li>
+                        <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a" href="form.html">Contact-us</a></li>
                     </ul>
     
                     <div class="headerContainer__headerMenu_headerNav_burger">
@@ -61,7 +61,7 @@
             </div>
             
             <div class="headerContainer__bookNow">
-                <button class="headerContainer__bookNow_btn">
+                <button onclick="window.location.href = 'rooms.html' " class="headerContainer__bookNow_btn">
                     <img src="/media/header/BookNow.png" alt="" class="headerContainer__bookNow_btn_img">
                     <div class="headerContainer__bookNow_btn_text mont" >BOOK NOW</div>
                 </button>
@@ -125,8 +125,8 @@
                 <p class="mainContainer__changePage_paragraph mont">"Calm, Serene, Retro – What a way to relax and enjoy"</p>
                 <p class="mainContainer__changePage_desc mont">Mr. and Mrs. Baxter, UK</p>
                 <div class="mainContainer__changePage_btns">
-                    <button class="mainContainer__changePage_btns_btn"><div class="mainContainer__changePage_btns_btn_text">⬅</div></button>
-                    <button class="mainContainer__changePage_btns_btn"><div class="mainContainer__changePage_btns_btn_text">➡</div></button>
+                    <button onclick="window.location.href = '/index.html' " class="mainContainer__changePage_btns_btn"><div class="mainContainer__changePage_btns_btn_text">⬅</div></button>
+                    <button onclick="window.location.href = 'rooms.html' " class="mainContainer__changePage_btns_btn"><div class="mainContainer__changePage_btns_btn_text">➡</div></button>
                 </div>
             </div>
         </div>
@@ -157,22 +157,22 @@
             <div class="footerContainer__mediaLinks mont">
                 <div class="footerContainer__mediaLinks_link">
                     
-                    <div class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/facebook.png')"></div>
-                    <div class="footerContainer__mediaLinks_link_text"><a href="">Facebook</a></div>
+                    <div onclick="window.location.href = 'https://facebook.com' "  class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/facebook.png')"></div>
+                    <div class="footerContainer__mediaLinks_link_text"><a href="https://facebook.com">Facebook</a></div>
 
                 </div>
                 
                 <div class="footerContainer__mediaLinks_link">
                     
-                    <div class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/twitter.png')"></div>
-                    <div class="footerContainer__mediaLinks_link_text"><a href="">Twitter</a></div>
+                    <div onclick="window.location.href = 'https://twitter.com' " class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/twitter.png')"></div>
+                    <div class="footerContainer__mediaLinks_link_text"><a href="https://twitter.com">Twitter</a></div>
 
                 </div>
                 
                 <div class="footerContainer__mediaLinks_link">
                     
-                    <div class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/instagram.png')"></div>
-                    <div class="footerContainer__mediaLinks_link_text"><a href="">Instagram</a></div>
+                    <div onclick="window.location.href = 'https://instagram.com' " class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/instagram.png')"></div>
+                    <div class="footerContainer__mediaLinks_link_text"><a href="https://instagram.com">Instagram</a></div>
 
                 </div>
             </div>
