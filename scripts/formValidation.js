@@ -28,7 +28,7 @@ const sendDataToTelegram = (data)=>{
 })
 }
 
-  document.addEventListener("DOMContentLoaded", ()=>{
+const showFormText = ()=>{
     if(localStorage.getItem('Data')){
         const MAIN = document.querySelector('main')
         const TEXT = document.querySelector('.formText')
@@ -41,6 +41,10 @@ const sendDataToTelegram = (data)=>{
         FOOTER.classList.add('formFilled')
 
     }
+}
+
+  document.addEventListener("DOMContentLoaded", ()=>{
+    showFormText()
 
     const FORM = document.querySelector('#mainContainer__form')
 
@@ -66,6 +70,8 @@ const sendDataToTelegram = (data)=>{
             clearData([NAME_INPUT, EMAIL_INPUT, TEXT_AREA])
 
             sendDataToTelegram(USER_DATA)
+
+            showFormText()
         }
 
     })
