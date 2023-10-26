@@ -25,8 +25,48 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     // scroll and Testimonials
     if(window.location.pathname != '/pages/form.html'){
-        const TESTIMONIAL_BTNS = document.querySelectorAll('.container__changePage_btns_btn')
+        const TESTIMONIAL_BTNS = document.querySelectorAll('.container__review_btns_btn')
+        const TESTIMONIAL_TEXT = document.querySelector('.container__review_paragraph')
+        const TESTIMONIAL_AUTHOR = document.querySelector('.container__review_desc')
+        // making changable reviews(Testimonials)
+        let counter = 1
+        TESTIMONIAL_BTNS.forEach((btn)=>{
+            btn.addEventListener('click', ()=>{
 
+                // making so click changes the counter and its limit from 0 to 3
+                if(counter < 3 && counter > 0){
+                    if(btn.classList[1] == 'next'){
+                        counter += 1
+                    }else{
+                        counter -= 1
+                    }
+                }else if(btn.classList[1] == 'previous' && counter > 0){
+                    counter -= 1
+                }else if(btn.classList[1] == 'next' && counter == 0){
+                    counter += 1
+                }else if(btn.classList[1] == 'next' && counter == 3){
+                    counter = 0
+                }else if(btn.classList[1] == 'previous' && counter == 0){
+                    counter = 3
+                }
+                
+                // changing text on counter
+                if(counter == 0){
+                    TESTIMONIAL_TEXT.innerHTML = `"Calm, Serene, Retro – What a way to relax and enjoy"`
+                    TESTIMONIAL_AUTHOR.innerHTML = `Mr. and Mrs. Baxter, UK`
+                }else if(counter == 1){
+                    TESTIMONIAL_TEXT.innerHTML = `"Comment 2"`
+                    TESTIMONIAL_AUTHOR.innerHTML = `Author 2`
+                }else if(counter == 2){
+                    TESTIMONIAL_TEXT.innerHTML = `"Comment 3"`
+                    TESTIMONIAL_AUTHOR.innerHTML = `Author 3`
+                }else{
+                    TESTIMONIAL_TEXT.innerHTML = `"Comment 4"`
+                    TESTIMONIAL_AUTHOR.innerHTML = `Author 4`
+                }
+            })
+        })
+        // scroll to footer
         const SCROLL_BTN = document.querySelector('.container__scrollDown_btn_img')
         const FOOTER = document.querySelector('footer')
 
