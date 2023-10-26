@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             btn.addEventListener('click', ()=>{
 
                 // making so click changes the counter and its limit from 0 to 3
+                // Я знаю, що структура погана, але працює ) (Ви нам не показували як таке робити або схожі приклади)
                 if(counter < 3 && counter > 0){
                     if(btn.classList[1] == 'next'){
                         counter += 1
