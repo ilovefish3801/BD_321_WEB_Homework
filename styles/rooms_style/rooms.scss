@@ -1,7 +1,7 @@
 main{
     margin-top: 100px;
 
-    .mainTitle{
+    .title{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -10,7 +10,7 @@ main{
         font-size: 32px;
     }
 
-    .mainDesc{
+    .desc{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,7 +21,7 @@ main{
     }
 
 
-    .mainContainer{
+    .container{
     
 
         &__rooms{
@@ -209,7 +209,7 @@ main{
 
 @media screen and (max-width: 1000px) {
     main{
-        .mainDesc{
+        .desc{
             font-size: 12px;
         }
     }
@@ -217,11 +217,11 @@ main{
 
 @media screen and (max-width: 720px) {
     main{
-        .mainDesc{
+        .desc{
             font-size: 8px;
         }
 
-        .mainContainer{
+        .container{
 
             &__rooms{
                 &_room{
@@ -252,11 +252,11 @@ main{
 
 @media screen and (max-width: 500px) {
     main{
-        .mainDesc{
+        .desc{
             font-size: 6px;
         }
 
-        .mainContainer{
+        .container{
 
             &__rooms{
                 &_room{
@@ -313,7 +313,7 @@ main{
 
 @media screen and (max-width: 400px) {
     main{
-        .mainDesc{
+        .desc{
             font-size: 5px;
         }
     }

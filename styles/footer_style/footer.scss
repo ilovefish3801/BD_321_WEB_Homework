@@ -3,12 +3,12 @@ footer{
 
     margin-top: 100px;
 
-    .footerContainer{
+    .container{
         display: flex;
         align-items: center;
         justify-content: space-around;
 
-        &__footerContent{
+        &__content{
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -36,6 +36,8 @@ footer{
 
                 letter-spacing: 6px;
 
+                cursor: pointer;
+
                 span{
                     font-size: 8px;
                 }
@@ -49,7 +51,7 @@ footer{
             }
         }
 
-        &__footerNav{
+        &__nav{
 
 
             &_ul{
@@ -93,6 +95,8 @@ footer{
                     background-repeat: no-repeat;
 
                     margin-right: 10px;
+
+                    cursor: pointer;
                 }
                 &_text{
                     margin-bottom: 10px;
@@ -106,7 +110,7 @@ footer{
 
 @media screen and (max-width: 600px) {
     footer{
-        .footerContainer{
+        .container{
             justify-content: center;
             flex-direction: column;
 
@@ -121,7 +125,7 @@ footer{
             }
         }
 
-        .footerContainer div{
+        .container div{
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -130,7 +134,7 @@ footer{
             margin: 0;
         }
 
-        .footerContainer__mediaLinks_link{
+        .container__mediaLinks_link{
             margin-top: 10px !important;
         }
     }

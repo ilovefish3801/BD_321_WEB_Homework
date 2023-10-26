@@ -1,6 +1,6 @@
 main{
 
-    .mainTitle{
+    .title{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -11,7 +11,7 @@ main{
         font-weight: 500;
     }
 
-    .mainContainer{
+    .container{
 
         &__rooms{
 
@@ -100,11 +100,11 @@ main{
         &__rooms>div:nth-child(2){
             flex-direction: row-reverse;
 
-            .mainContainer__rooms_room_data{
+            .container__rooms_room_data{
                 flex-direction: row-reverse;
             }
 
-            .mainContainer__rooms_room_data_content{
+            .container__rooms_room_data_content{
                 margin-left: 0;
                 margin-right: 20px;
             }
@@ -114,20 +114,20 @@ main{
 
 @media screen and (max-width: 800px) {
     main{
-        .mainContainer{
-            .mainContainer__rooms{
+        .container{
+            .container__rooms{
 
-                .mainContainer__rooms_room{
+                .container__rooms_room{
                     flex-direction: column;
                     justify-content: center;
 
-                    .mainContainer__rooms_room_data{
+                    .container__rooms_room_data{
                         margin-bottom: 22px;
                         hr{
                             display: none;
                         }
 
-                        .mainContainer__rooms_room_data_content{
+                        .container__rooms_room_data_content{
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
@@ -144,10 +144,10 @@ main{
 
 @media screen and (max-width: 800px) {
     main{
-        .mainContainer{
+        .container{
             img{
-                max-width: 280px;
-                max-height: 280px;
+                max-width: 420px;
+                max-height: 420px;
             }
         }
     }
@@ -155,7 +155,7 @@ main{
 
 @media screen and (max-width: 600px) {
     main{
-        .mainTitle{
+        .title{
             font-size: 16px;
         }
     }
@@ -163,16 +163,28 @@ main{
 
 @media screen and (max-width: 500px) {
     main{
-        .mainTitle{
+        .title{
             font-size: 12px;
+        }
+        .container{
+            img{
+                max-width: 320px;
+                max-height: 320px;
+            }
         }
     }
 }
 
 @media screen and (max-width: 370px) {
     main{
-        .mainTitle{
+        .title{
             font-size: 10px;
+        }
+        .container{
+            img{
+                max-width: 280px;
+                max-height: 280px;
+            }
         }
     }
 }

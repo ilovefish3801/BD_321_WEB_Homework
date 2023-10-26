@@ -20,25 +20,26 @@
     
 </head>
 <body class="body">
+    
     <header style="background-color: #14274A;">
         
-        <div class="headerContainer">
+        <div class="container">
             
-            <div class="headerContainer__headerMenu">
-                <div class="headerContainer__headerMenu_headerLogo garamond">
-                    LUXURY<span>HOTELS</span>
+            <div class="container__menu headerMenu">
+                <div onclick="window.location.href = '../index.html' " class="container__menu_logo garamond">
+                    LUXURY<span>HOTELS</span><span>You are on Contact Page</span>
                 </div>
 
-                <nav class="headerContainer__headerMenu_headerNav">
+                <nav class="container__menu_nav">
                     
-                    <ul class="headerContainer__headerMenu_headerNav_ul mont">
-                        <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a" href="/index.html">Home</a></li>
-                        <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a" href="facilities.html">Facilities</a></li>
-                        <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a" href="rooms.html">Rooms</a></li>
-                        <li class="headerContainer__headerMenu_headerNav_ul_li"><a class="headerContainer__headerMenu_headerNav_ul_li_a selectedBTN" href="#">Contact-us</a></li>
+                    <ul class="container__menu_nav_ul mont">
+                        <li> <a href="/index.html">Home</a></li>
+                        <li> <a href="facilities.html">Facilities</a></li>
+                        <li> <a href="rooms.html">Rooms</a></li>
+                        <li> <a class="selectedBTN" href="#">Contact-us</a></li>
                     </ul>
     
-                    <div class="headerContainer__headerMenu_headerNav_burger">
+                    <div class="container__menu_nav_burger">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -49,13 +50,13 @@
         </div>
     </header>
 
-    <section class="mobileContainer">
-        <nav class="mobileContainer__mobileNav">
-            <ul class="mobileContainer_mobileNav_ul mont">
-                <li class="mobileContainer_mobileNav_ul_li"><a class="mobileContainer_mobileNav_ul_li_a" href="/index.html">Home</a></li>
-                <li class="mobileContainer_mobileNav_ul_li"><a class="mobileContainer_mobileNav_ul_li_a" href="facilities.html">Facilities</a></li>
-                <li class="mobileContainer_mobileNav_ul_li"><a class="mobileContainer_mobileNav_ul_li_a" href="rooms.html">Rooms</a></li>
-                <li class="mobileContainer_mobileNav_ul_li"><a class="mobileContainer_mobileNav_ul_li_a selectedBTN" href="#">Contact-us</a></li>
+    <section class="mobileMenu">
+        <nav class="mobileMenu__nav">
+            <ul class="mobileMenu__nav_ul mont">
+                <li> <a href="/index.html">Home</a></li>
+                <li> <a href="facilities.html">Facilities</a></li>
+                <li> <a href="rooms.html">Rooms</a></li>
+                <li> <a class="selectedBTN" href="#">Contact-us</a></li>
             </ul>
         </nav>
     </section>
@@ -105,42 +106,42 @@
 
     <footer>
 
-        <div class="footerContainer">
+        <div class="container">
             
-            <div class="footerContainer__footerContent">
-                <div class="footerContainer__footerContent_text garamond">
+            <div class="container__content">
+                <div onclick="window.location.href = '/index.html' " class="container__content_text garamond">
                     LUXURY <span>HOTELS</span>
                 </div>
-                <p class="footerContainer__footerContent_paragraph mont">497 Evergreen Rd. Roseville, CA 95673<br> +44 345 678 903<br> luxury_hotels@gmail.com</p>
+                <p class="container__content_paragraph mont">497 Evergreen Rd. Roseville, CA 95673<br> +44 345 678 903<br> luxury_hotels@gmail.com</p>
             </div>
             
-            <nav class="footerContainer__footerNav">
-                <ul class="footerContainer__footerNav_ul">
-                    <li class="footerContainer__footerNav_ul_li mont"><a href="/about.html">About Us</a></li>
-                    <li class="footerContainer__footerNav_ul_li mont"><a href="form.html">Contact</a></li>
-                    <li class="footerContainer__footerNav_ul_li mont"><a href="/index.html">Terms & Conditions</a></li>
+            <nav class="container__nav">
+                <ul class="container__nav_ul">
+                    <li class="container__nav_ul_li mont"><a href="about.html">About Us</a></li>
+                    <li class="container__nav_ul_li mont"><a href="form.html">Contact</a></li>
+                    <li class="container__nav_ul_li mont"><a href="/index.html">Terms & Conditions</a></li>
                 </ul>
             </nav>
 
-            <div class="footerContainer__mediaLinks mont">
-                <div class="footerContainer__mediaLinks_link">
-                    
-                    <div onclick="window.location.href = 'https://facebook.com' "  class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/facebook.png')"></div>
-                    <div class="footerContainer__mediaLinks_link_text"><a href="https://facebook.com">Facebook</a></div>
+            <div class="container__mediaLinks mont">
+                <div class="container__mediaLinks_link">
+
+                    <div onclick="openInNewTab('https://facebook.com')" class="container__mediaLinks_link_img" style="background-image: url('/media/footer/facebook.png')"></div>
+                    <div class="container__mediaLinks_link_text"><a href="https://facebook.com" target="_blank">Facebook</a></div>
 
                 </div>
                 
-                <div class="footerContainer__mediaLinks_link">
+                <div class="container__mediaLinks_link">
                     
-                    <div onclick="window.location.href = 'https://twitter.com' " class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/twitter.png')"></div>
-                    <div class="footerContainer__mediaLinks_link_text"><a href="https://twitter.com">Twitter</a></div>
+                    <div onclick="openInNewTab('https://twitter.com')" class="container__mediaLinks_link_img" style="background-image: url('/media/footer/twitter.png')"></div>
+                    <div class="container__mediaLinks_link_text"><a href="https://twitter.com" target="_blank">Twitter</a></div>
 
                 </div>
                 
-                <div class="footerContainer__mediaLinks_link">
+                <div class="container__mediaLinks_link">
                     
-                    <div onclick="window.location.href = 'https://instagram.com' " class="footerContainer__mediaLinks_link_img" style="background-image: url('/media/footer/instagram.png')"></div>
-                    <div class="footerContainer__mediaLinks_link_text"><a href="https://instagram.com">Instagram</a></div>
+                    <div onclick="openInNewTab('https://instagram.com')" class="container__mediaLinks_link_img" style="background-image: url('/media/footer/instagram.png')"></div>
+                    <div class="container__mediaLinks_link_text"><a href="https://instagram.com" target="_blank">Instagram</a></div>
 
                 </div>
             </div>

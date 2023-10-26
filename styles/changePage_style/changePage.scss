@@ -1,6 +1,6 @@
 main{
 
-    .mainContainer{
+    .container{
         &__changePage{
             display: flex;
             justify-content: center;
@@ -56,7 +56,7 @@ main{
 
 @media screen and (max-width: 500px) {
     main{
-        .mainContainer__changePage{
+        .container__changePage{
             font-size: 12px;
         }
     }
@@ -64,7 +64,7 @@ main{
 
 @media screen and (max-width: 370px) {
     main{
-        .mainContainer__changePage{
+        .container__changePage{
             font-size: 10px;
         }
     }

@@ -6,17 +6,17 @@ body {
 header {
   height: 760px;
 }
-header .headerContainer__headerText_content {
+header .container__text_content {
   color: #fff;
   margin-top: 100px;
 }
-header .headerContainer__bookNow {
+header .container__bookNow {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 140px;
 }
-header .headerContainer__bookNow_btn {
+header .container__bookNow_btn {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -28,24 +28,24 @@ header .headerContainer__bookNow_btn {
   width: 180px;
   cursor: pointer;
 }
-header .headerContainer__bookNow_btn_text {
+header .container__bookNow_btn_text {
   font-size: 18px;
   font-weight: 600;
 }
-header .headerContainer__bookNow_btn_img {
+header .container__bookNow_btn_img {
   max-width: 24px;
   max-height: 18px;
 }
-header .headerContainer__bookNow_btn:hover {
+header .container__bookNow_btn:hover {
   background-color: #c79841;
 }
-header .headerContainer__scrollDown {
+header .container__scrollDown {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-top: 60px;
 }
-header .headerContainer__scrollDown_text {
+header .container__scrollDown_text {
   color: #fff;
   display: flex;
   justify-content: center;
@@ -53,13 +53,13 @@ header .headerContainer__scrollDown_text {
   font-size: 22px;
   font-weight: 600;
 }
-header .headerContainer__scrollDown_btn {
+header .container__scrollDown_btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 12px;
 }
-header .headerContainer__scrollDown_btn_img {
+header .container__scrollDown_btn_img {
   max-width: 44px;
   max-height: 44px;
   cursor: pointer;
@@ -86,22 +86,22 @@ header .hero_text_Paragraph {
 }
 
 @media screen and (max-width: 1000px) {
-  header .headerContainer__headerText {
+  header .container__text {
     display: flex;
     justify-content: center;
   }
 }
 @media screen and (max-width: 400px) {
-  header .headerContainer .headerContainer__headerText .headerContainer__headerText_content .hero_text_Welcome {
+  header .container .container__text .container__text_content .hero_text_Welcome {
     font-size: 16px;
   }
-  header .headerContainer .headerContainer__headerText .headerContainer__headerText_content .hero_text_Luxury {
+  header .container .container__text .container__text_content .hero_text_Luxury {
     font-size: 52px;
   }
-  header .headerContainer .headerContainer__headerText .headerContainer__headerText_content .hero_text_Hotel {
+  header .container .container__text .container__text_content .hero_text_Hotel {
     font-size: 30px;
   }
-  header .headerContainer .headerContainer__headerText .headerContainer__headerText_content .hero_text_Paragraph {
+  header .container .container__text .container__text_content .hero_text_Paragraph {
     font-size: 12px;
   }
 }/*# sourceMappingURL=index.css.map */

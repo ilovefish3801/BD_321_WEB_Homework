@@ -5,9 +5,9 @@ body{
 
 header{
     height: 760px;
-    .headerContainer{
+    .container{
 
-        &__headerText{
+        &__text{
 
             &_content{
                 color: #fff;
@@ -113,7 +113,7 @@ header{
 
 @media screen and (max-width: 1000px) {
     header{
-        .headerContainer__headerText{
+        .container__text{
         display: flex;
         justify-content: center;
     }
@@ -122,9 +122,9 @@ header{
 
 @media screen and (max-width: 400px) {
     header{
-        .headerContainer{
-            .headerContainer__headerText{
-                .headerContainer__headerText_content{
+        .container{
+            .container__text{
+                .container__text_content{
                     .hero_text_Welcome{
                         font-size: 16px;
                     }

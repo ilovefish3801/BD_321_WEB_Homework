@@ -1,7 +1,7 @@
 main{
     margin-top: 100px;
 
-    .mainTitle{
+    .title{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -10,7 +10,7 @@ main{
         font-size: 32px;
     }
 
-    .mainDesc{
+    .desc{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -20,7 +20,7 @@ main{
         font-weight: 500;
     }
 
-    .mainContainer{
+    .container{
 
         &__content{
             display: flex;
@@ -66,7 +66,7 @@ main{
 
 @media screen and (max-width: 1000px) {
     main{
-        .mainDesc{
+        .desc{
             font-size: 12px;
         }
     }
@@ -74,10 +74,10 @@ main{
 
 @media screen and (max-width: 800px) {
     main{
-        .mainDesc{
+        .desc{
             font-size: 9px;
         }
-        .mainContainer{
+        .container{
 
             &__content{
                 
@@ -101,10 +101,10 @@ main{
 
 @media screen and (max-width: 600px) {
     main{
-        .mainDesc{
+        .desc{
             font-size: 8px;
         }
-        .mainContainer{
+        .container{
 
             &__content{
                 
@@ -131,7 +131,7 @@ main{
 
 @media screen and (max-width: 500px) {
     main{
-        .mainDesc{
+        .desc{
             font-size: 6px;
         }
     }
@@ -139,10 +139,10 @@ main{
 
 @media screen and (max-width: 400px) {
     main{
-        .mainDesc{
+        .desc{
            font-size: 5px;
         }
-        .mainContainer{
+        .container{
 
             &__content{
                 

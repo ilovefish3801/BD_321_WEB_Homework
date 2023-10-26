@@ -15,14 +15,14 @@ header{
     display: flex;
     justify-content: center;
 
-    .headerContainer{
+    .container{
         width: 1000px;
 
-        &__headerMenu{
+        &__menu{
             display: flex;
             justify-content: space-between;
 
-            &_headerLogo{
+            &_logo{
                 font-size: 32px;
                 font-style: normal;
                 font-weight: 700;
@@ -46,12 +46,28 @@ header{
 
                 letter-spacing: 6px;
 
-                span{
+                cursor: pointer;
+
+                span:nth-child(1){
                     font-size: 12px;
                     letter-spacing: 8px;
                 }
+
+                span:nth-child(2){
+                    font-size: 12px;
+                    letter-spacing: 2px;
+
+                    display: none;
+                }
             }
-            &_headerNav{
+
+            &_logo:hover{
+                span:nth-child(2){
+                    display: block;
+                }
+            }
+
+            &_nav{
                 
                 display: flex;
                 align-items: center;
@@ -62,16 +78,16 @@ header{
                     display: flex;
                     align-items: center;
 
-                    &_li{
+                    li{
                         margin-right: 60px;
                         display: flex;
                     
                     
-                        &_a{
+                        a{
                             text-decoration: none;
                             color: #fff;
                         }
-                        &_a:hover{
+                        a:hover{
                             text-decoration: underline;
                         }
                     }
@@ -140,14 +156,17 @@ header{
             }
         }
     }
+    
     .selectedBTN{
         text-decoration: underline !important;
         font-weight: 600;
     }
 }
 
-.mobileContainer{
+.mobileMenu{
     position: fixed;
+
+    z-index: 999;
 
     transform: translateY(-350vh);
 
@@ -161,7 +180,7 @@ header{
     justify-content: center;
     align-items: center;
     
-    &_mobileNav{
+    &__nav{
         
         &_ul{
             list-style: none;
@@ -171,8 +190,12 @@ header{
             justify-content: center;
             align-items: center;
 
-            &_li{
+            padding: 0;
+
+            li{
                 margin-bottom: 20px;
+                padding: 0;
+                
                 a{
                     text-decoration: none;
                     color: #fff;
@@ -189,7 +212,7 @@ header{
     }
 }
 
-.mobileContainer.active{
+.mobileMenu.active{
     transform: translateY(0);
     top: 0;
     
@@ -199,13 +222,13 @@ header{
 
 @media screen and (max-width: 1000px) {
     header{
-        .headerContainer{
+        .container{
         width: 500px;
     }
-        .headerContainer__headerMenu_headerNav_ul{
+        .container__menu_nav_ul{
         display: none;
     }
-        .headerContainer__headerMenu_headerNav_burger{
+        .container__menu_nav_burger{
         display: block;
     }
     }

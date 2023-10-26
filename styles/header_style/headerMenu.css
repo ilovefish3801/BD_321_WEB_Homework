@@ -14,14 +14,14 @@ header {
   display: flex;
   justify-content: center;
 }
-header .headerContainer {
+header .container {
   width: 1000px;
 }
-header .headerContainer__headerMenu {
+header .container__menu {
   display: flex;
   justify-content: space-between;
 }
-header .headerContainer__headerMenu_headerLogo {
+header .container__menu_logo {
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -38,32 +38,41 @@ header .headerContainer__headerMenu_headerLogo {
   justify-content: center;
   align-items: center;
   letter-spacing: 6px;
+  cursor: pointer;
 }
-header .headerContainer__headerMenu_headerLogo span {
+header .container__menu_logo span:nth-child(1) {
   font-size: 12px;
   letter-spacing: 8px;
 }
-header .headerContainer__headerMenu_headerNav {
+header .container__menu_logo span:nth-child(2) {
+  font-size: 12px;
+  letter-spacing: 2px;
+  display: none;
+}
+header .container__menu_logo:hover span:nth-child(2) {
+  display: block;
+}
+header .container__menu_nav {
   display: flex;
   align-items: center;
 }
-header .headerContainer__headerMenu_headerNav_ul {
+header .container__menu_nav_ul {
   list-style: none;
   display: flex;
   align-items: center;
 }
-header .headerContainer__headerMenu_headerNav_ul_li {
+header .container__menu_nav_ul li {
   margin-right: 60px;
   display: flex;
 }
-header .headerContainer__headerMenu_headerNav_ul_li_a {
+header .container__menu_nav_ul li a {
   text-decoration: none;
   color: #fff;
 }
-header .headerContainer__headerMenu_headerNav_ul_li_a:hover {
+header .container__menu_nav_ul li a:hover {
   text-decoration: underline;
 }
-header .headerContainer__headerMenu_headerNav_burger {
+header .container__menu_nav_burger {
   height: 32px;
   width: 42px;
   position: relative;
@@ -72,7 +81,7 @@ header .headerContainer__headerMenu_headerNav_burger {
   display: none;
   z-index: 1000;
 }
-header .headerContainer__headerMenu_headerNav_burger :first-child {
+header .container__menu_nav_burger :first-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -81,7 +90,7 @@ header .headerContainer__headerMenu_headerNav_burger :first-child {
   background-color: #fff;
   transition: 0.5s;
 }
-header .headerContainer__headerMenu_headerNav_burger :nth-child(2) {
+header .container__menu_nav_burger :nth-child(2) {
   position: absolute;
   top: 14px;
   left: 0;
@@ -90,7 +99,7 @@ header .headerContainer__headerMenu_headerNav_burger :nth-child(2) {
   background-color: #fff;
   transition: 0.5s;
 }
-header .headerContainer__headerMenu_headerNav_burger :last-child {
+header .container__menu_nav_burger :last-child {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -99,16 +108,16 @@ header .headerContainer__headerMenu_headerNav_burger :last-child {
   background-color: #fff;
   transition: 0.5s;
 }
-header .headerContainer__headerMenu_headerNav_burger.active :first-child {
+header .container__menu_nav_burger.active :first-child {
   transform: rotate(45deg);
   top: calc(50% - 2px);
   transition: 0.5s;
 }
-header .headerContainer__headerMenu_headerNav_burger.active :nth-child(2) {
+header .container__menu_nav_burger.active :nth-child(2) {
   display: none;
   transition: 0.5s;
 }
-header .headerContainer__headerMenu_headerNav_burger.active :last-child {
+header .container__menu_nav_burger.active :last-child {
   transform: rotate(-45deg);
   bottom: calc(50% - 1px);
   transition: 0.5s;
@@ -118,8 +127,9 @@ header .selectedBTN {
   font-weight: 600;
 }
 
-.mobileContainer {
+.mobileMenu {
   position: fixed;
+  z-index: 999;
   transform: translateY(-350vh);
   transition: 0.3s;
   width: 100%;
@@ -129,40 +139,42 @@ header .selectedBTN {
   justify-content: center;
   align-items: center;
 }
-.mobileContainer_mobileNav_ul {
+.mobileMenu__nav_ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
-.mobileContainer_mobileNav_ul_li {
+.mobileMenu__nav_ul li {
   margin-bottom: 20px;
+  padding: 0;
 }
-.mobileContainer_mobileNav_ul_li a {
+.mobileMenu__nav_ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 24px;
 }
-.mobileContainer .selectedBTN {
+.mobileMenu .selectedBTN {
   text-decoration: underline !important;
   font-weight: 600;
 }
 
-.mobileContainer.active {
+.mobileMenu.active {
   transform: translateY(0);
   top: 0;
   transition: 0.3s;
 }
 
 @media screen and (max-width: 1000px) {
-  header .headerContainer {
+  header .container {
     width: 500px;
   }
-  header .headerContainer__headerMenu_headerNav_ul {
+  header .container__menu_nav_ul {
     display: none;
   }
-  header .headerContainer__headerMenu_headerNav_burger {
+  header .container__menu_nav_burger {
     display: block;
   }
 }/*# sourceMappingURL=headerMenu.css.map */

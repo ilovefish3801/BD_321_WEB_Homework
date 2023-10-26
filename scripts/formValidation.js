@@ -2,11 +2,15 @@ const NameValidation = (element)=>{
     const VALUE = element.value
     
     if (VALUE.length >= 3){
-        return VALUE
+        let FILTERED_VALUE = VALUE.toLowerCase()
+        
+        FILTERED_VALUE = FILTERED_VALUE[0].toUpperCase() + FILTERED_VALUE.slice(1)
+        
+        return FILTERED_VALUE
     }else{
         return null
     }
-  }  
+}
 
 const clearData = (elements)=>{
     elements.map((el)=>{
@@ -22,14 +26,14 @@ const sendDataToTelegram = (data)=>{
     },
     body: JSON.stringify({
       chat_id: '6148293963',
-      text: `Name: ${data.name} \nEmail: ${data.email} \n Message: ${data.message}`,
+      text: `Name: ${data.name} \nEmail: ${data.email} \nMessage: ${data.message}`,
         
 })
 })
 }
 
 const showFormText = ()=>{
-    if(localStorage.getItem('Data')){
+    if(localStorage.getItem('data')){
         const MAIN = document.querySelector('main')
         const TEXT = document.querySelector('.formText')
         const FOOTER = document.querySelector('footer')
@@ -56,16 +60,16 @@ const showFormText = ()=>{
     FORM.addEventListener('submit', (e)=>{
         e.preventDefault()
 
-        let name = NameValidation(NAME_INPUT)
-        let email = EMAIL_INPUT.value
-        let message = TEXT_AREA.value
+        const name = NameValidation(NAME_INPUT)
+        const email = EMAIL_INPUT.value
+        const message = TEXT_AREA.value
 
         if (name == null){
             alert('Name is too short')
         }else{
             const USER_DATA = {name, email, message}
             
-            localStorage.setItem('Data', JSON.stringify(USER_DATA))
+            localStorage.setItem('data', JSON.stringify(USER_DATA))
 
             clearData([NAME_INPUT, EMAIL_INPUT, TEXT_AREA])
 
