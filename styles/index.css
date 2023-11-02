@@ -1,69 +1,128 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: bisque;
 }
 
-header{
-    background: #D22F2F;
-    padding: 1em;
-    text-align: center;
-}
+/* task 2 */
+/* .modalContainer{
+    display: none;
 
-footer{
-    background: #D22F2F;
-    text-align: center;
-    padding: 1em;
-}
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-.footer-text{
-    color: rgb(255, 255, 255);
-    font-family: Roboto;
-}
-
-.header-text{
-    font-family: Roboto;
-    font-weight: 400;
-    margin: 0;
-    color: rgb(255, 255, 255);
-}
-.hero-img{
-    margin: 0 auto;
-    display: block;
-    padding: 1em;
-}
-
-img{
+    background-color: rgba(0,0,0,0.5);
     
-    border-radius: 26px;
+    justify-content: center;
+    align-items: center;
 }
 
-.text-car span{
-    color: #FE0505;
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: aquamarine;
+    padding: 6px 60px;
+} */
+
+
+/* task 3 */
+/* body{
+    overflow: hidden;
 }
 
-.text-car{
-    margin: 0;
-    text-align: center;
-    font-family: Roboto;
+.field{
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+
+    background-image: url("/img/pitch.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.text-car p{
+.ball{
+    max-width: 200px;
+
+    position: absolute;
+
+    top: 0;
+
+    transition: 0.5s;
+} */
+
+
+
+
+/* task 4 */
+/* main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+}
+
+.container{
+    width: 300px;
+    height: 100px;
+
+    border: 2px solid black;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container div{
+    width: 70px;
+    height: 70px;
+    background-color: grey;
+
+    border-radius: 50%;
+}
+
+.container div:nth-child(2){
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.red.active{
+    background-color: red;
+}
+.yellow.active{
+    background-color: yellow;
+}
+.green.active{
+    background-color: greenyellow;
+}
+
+.change{
+    height: 100px;
+} */
+
+
+
+
+
+
+/* task 5 */
+/* ol{
     font-size: 24px;
 }
 
-.text-car h1{
-    font-size: 40px;
+ol li{
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
-ul{
-    list-style: none;
-    display: flex;
-}
-
-.img-row{
-    display: flex;
-}
-
-.img-row img{
-    width: 25%;
-}
+ol li.clicked{
+    background-color: rgb(255, 136, 0);
+} */
